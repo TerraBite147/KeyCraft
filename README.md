@@ -1,39 +1,101 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# KeyCraft
 
-Welcome,
+## Table of Contents
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+- [Table of Contents](#table-of-contents)
+- [Overview](#overview)
+- [User Experience](#user-experience)
+    - [Agile Methodology](#agile-methodology)
+    - [User Epics](#user-epics)
+    - [User Stories](#user-stories)
+- [Design](#design)
+    - [Wireframes](#wireframes)
+    - [Database Schema](#database-schema)
+    - [Typography](#typography)
+    - [Color Scheme](#color-scheme)
+    - [Icons](#icons)
+- [Features](#features)
+    - [Existing Features](#existing-features)
+        - [General Navigation](#general-navigation)
+            - [Navigation Bar](#navigation-bar)
+            - [Landing Page](#landing-page)
+            - [Header](#header)
+            - [Footer](#footer)
+            - [Privacy Policy](#privacy-policy)
+            - [About Us](#about-us)
+            - [Error Pages](#error-pages)
+                - [404 Page](#404-page)
+                - [500 Page](#500-page)                    
+        - [Authentication](#authentication)
+            - [Registration](#registration)
+            - [Login](#login)
+            - [Logout](#logout)
+        - [Profile](#profile)
+            - [Profile Page](#profile-page)
+            - [Edit Profile](#edit-profile)
+        - [Products](#products)
+            - [Product Page](#product-page)
+            - [Search Products](#search-products)
+            - [Filter Products](#filter-products)
+            - [Product Details](#product-details)
+            - [Add Product](#add-product)
+            - [Edit Product](#edit-product)
+            - [Delete Product](#delete-product)
+        - [Cart](#cart)
+            - [Cart Page](#cart-page)
+            - [Add to Cart](#add-to-cart)
+            - [Remove from Cart](#remove-from-cart)
+            - [Adjust Quantity](#adjust-quantity)
+        - [Checkout](#checkout)
+            - [Checkout Page](#checkout-page)
+            - [Payment](#payment)
+            - [Order Form](#order-form)
+            - [Order Confirmation](#order-confirmation)
+        - [Contact](#contact)
+            - [Contact Page](#contact-page)
+            - [Contact Form](#contact-form)
+        - [Newsletter](#newsletter)
+            - [Newsletter Signup](#newsletter-signup)
+            - [Newsletter Unsubscribe](#newsletter-unsubscribe)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
 
-## Codeanywhere Reminders
+- [Future Features](#future-features)
+- [Technologies Used](#technologies-used)
+    - [Languages](#languages)
+    - [Libraries and Frameworks](#libraries-and-frameworks)
+    - [Tools](#tools)
+    - [Databases](#databases)
+    - [Hosting](#hosting)
+    - [Version Control](#version-control)
+- [Testing](#testing)
+    - [Manual Testing](#manual-testing)
+    - [Automated Testing](#automated-testing)
+    - [User Stories Testing](#user-stories-testing)
+    - [Bugs](#bugs)
+- [Web Marketing](#web-marketing)
+    - [Advantages](#advantages)
+    - [Target Audience](#target-audience)
+    - [Marketing Strategy](#marketing-strategy)
+- [SEO](#seo)
+    - [Meta Tags](#meta-tags)
+    - [Sitemap](#sitemap)
+    - [robots.txt](#robotstxt)
+- [Deployment](#deployment)
+    - [Heroku Deployment](#heroku-deployment)
+- [Credits](#credits)
+    - [Content](#content)
+    - [Media](#media)
+    - [Acknowledgements](#acknowledgements)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
 
-`python3 -m http.server`
+## Overview
+KeyCraft is an e-commerce platform for enthusiasts to buy and customize keyboards, switches, and keycaps. The platform offers a seamless shopping experience with user-friendly navigation, detailed product information, and secure checkout. KeyCraft is built with Django, a high-level Python web framework, and uses PostgreSQL for the database. The platform is hosted on Heroku and uses Amazon S3 for static and media files storage.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## User Experience
+### Agile Methodology
+KeyCraft was developed using the Agile methodology, which emphasizes iterative development, collaboration, and flexibility. The project was divided into sprints, with each sprint focusing on specific features and user stories. The Agile methodology allowed for continuous feedback and improvements, ensuring that the final product meets user requirements and expectations.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+### User Epics
+KeyCraft is designed to meet the following user epics:
 
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+1. User Registration and Authentication
