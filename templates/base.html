@@ -42,13 +42,16 @@
                         <a class="nav-link" href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Products</a>
+                        <a class="nav-link" href="#">Keyboards</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="#">Switches</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#">Custom parts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sale</a>
                     </li>
                     {% if user.is_authenticated %}
                         <li class="nav-item">
@@ -83,7 +86,10 @@
         {% block page_header %}{% endblock %}
 
         <!-- Content Block -->
-        <main role="main" class="container"> {% block content %}{% endblock %}
+        <main role="main" class="container"> 
+            {% block content %}
+            <!-- Content goes here -->
+            {% endblock %}
             </main>
 
             <!-- Footer -->
@@ -91,9 +97,9 @@
                 <div class="container text-center">
                     <p>&copy; 2024 KeyCraft. All Rights Reserved.</p>
                     <p>
-                        <a href="#" class="text-white">Privacy Policy</a>
+                        <a href="#" class="text-black">Privacy Policy</a>
                         |
-                        <a href="#" class="text-white">Terms of Service</a>
+                        <a href="#" class="text-black">Terms of Service</a>
                     </p>
                 </div>
             </footer>
