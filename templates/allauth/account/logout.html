@@ -1,21 +1,27 @@
-{% extends "account/base.html" %}
+{% extends 'base.html' %}
+{% load static %}
 
-{% load i18n %}
-
-{% block head_title %}{% trans "Sign Out" %}{% endblock %}
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
 
 {% block content %}
-<h1>{% trans "Sign Out" %}</h1>
-
-<p>{% trans 'Are you sure you want to sign out?' %}</p>
-
-<form method="post" action="{% url 'account_logout' %}">
-  {% csrf_token %}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-  {% endif %}
-  <button type="submit">{% trans 'Sign Out' %}</button>
-</form>
-
-
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-center pt-5">
+        <div class="row w-100 mx-0 justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 text-center text-container">
+                <h1 class="display-4 logo-font text-black">You have been logged out</h1>
+                <div class="my-5">
+                    <p>
+                        You have successfully logged out. Click below to log in again or return to the home page.
+                    </p>
+                    <a class="custom-btn" href="{% url 'account_login' %}">Log In Again</a>
+                    <a class="custom-btn" href="{% url 'home' %}">Return to Home Page</a>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
