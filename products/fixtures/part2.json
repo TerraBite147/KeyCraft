@@ -1,0 +1,152 @@
+[
+    {
+        "model": "products.product",
+        "pk": 40,
+        "fields": {
+            "category": 6,
+            "manufacturer": 3,
+            "sku": "AKKO-DS",
+            "name": "Akko Demon Switches",
+            "description": "Akko Demon switches offer a smooth, linear typing experience with a 50g actuation force, ideal for gamers seeking fast response times.",
+            "price": "25.99",
+            "rating": "4.7",
+            "image_url": null,
+            "image": null
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 41,
+        "fields": {
+            "category": 6,
+            "manufacturer": 3,
+            "sku": "AKKO-PS",
+            "name": "Akko Penguin Switches",
+            "description": "Akko Penguin switches provide a tactile typing experience with a 50g actuation force, perfect for typists seeking tactile feedback.",
+            "price": "18.50",
+            "rating": "4.5",
+            "image_url": null,
+            "image": null
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 42,
+        "fields": {
+            "category": 6,
+            "manufacturer": 3,
+            "sku": "AKKO-GBS",
+            "name": "Akko Gold Blue Switches",
+            "description": "Akko Gold Blue switches offer a clicky typing experience with a 37g actuation force, delivering audible feedback with each key press.",
+            "price": "30.00",
+            "rating": "4.8",
+            "image_url": null,
+            "image": null
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 43,
+        "fields": {
+            "category": 6,
+            "manufacturer": 7,
+            "sku": "CHERRY-MX2A",
+            "name": "Cherry MX2A Switches",
+            "description": "Cherry MX2A switches are linear switches with a 60g actuation force, known for their durability and smooth keystrokes, ideal for both gaming and typing.",
+            "price": "30.00",
+            "rating": "4.9",
+            "image_url": null,
+            "image": null
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 44,
+        "fields": {
+            "category": 6,
+            "manufacturer": 7,
+            "sku": "CHERRY-MX2A-SPD",
+            "name": "Cherry MX2A Speed Switches",
+            "description": "Cherry MX2A Speed switches are linear switches with a 30g actuation force, designed for rapid key presses, making them perfect for fast-paced gaming.",
+            "price": "30.00",
+            "rating": "4.8",
+            "image_url": null,
+            "image": null
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 45,
+        "fields": {
+            "category": 6,
+            "manufacturer": 3,
+            "sku": "AKKO-RSS",
+            "name": "Akko Rose Switches",
+            "description": "Akko Rose switches provide a linear typing experience with a 45g actuation force, perfect for smooth and quiet keystrokes.",
+            "price": "20.00",
+            "rating": "4.6",
+            "image_url": null,
+            "image": null
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 46,
+        "fields": {
+            "category": 6,
+            "manufacturer": 7,
+            "sku": "CHERRY-MX3A",
+            "name": "Cherry MX3A Switches",
+            "description": "Cherry MX3A switches offer a tactile typing experience with a 55g actuation force, providing a balanced feel for both gaming and typing.",
+            "price": "25.00",
+            "rating": "4.7",
+            "image_url": null,
+            "image": null
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 47,
+        "fields": {
+            "category": 6,
+            "manufacturer": 8,
+            "sku": "GTR-BLK",
+            "name": "Gateron Black Switches",
+            "description": "Gateron Black switches are linear switches with a 50g actuation force, known for their smooth and consistent keystrokes, ideal for gamers.",
+            "price": "28.99",
+            "rating": "4.6",
+            "image_url": null,
+            "image": null
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 48,
+        "fields": {
+            "category": 6,
+            "manufacturer": 8,
+            "sku": "GTR-GRN",
+            "name": "Gateron Green Switches",
+            "description": "Gateron Green switches offer a clicky typing experience with a 80g actuation force, providing strong feedback and audible clicks.",
+            "price": "29.99",
+            "rating": "4.8",
+            "image_url": null,
+            "image": null
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 49,
+        "fields": {
+            "category": 6,
+            "manufacturer": 8,
+            "sku": "GTR-YLW",
+            "name": "Gateron Yellow Switches",
+            "description": "Gateron Yellow switches provide a linear typing experience with a 50g actuation force, delivering smooth keystrokes and fast response times.",
+            "price": "27.99",
+            "rating": "4.7",
+            "image_url": null,
+            "image": null
+        }
+    }
+]
