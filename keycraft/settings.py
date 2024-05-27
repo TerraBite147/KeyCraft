@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = "django-insecure-!g(s!=^jiw5c-z1ma2t_iu5hj_i+gzvrjqgeab862x^k4enj06"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["8000-terrabite147-keycraft-alyoez9xbou.ws-eu114.gitpod.io"]
 
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "allauth.account",
     "allauth.socialaccount",
     "home",
+    "products",
 ]
 
 MIDDLEWARE = [
