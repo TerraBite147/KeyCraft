@@ -41,7 +41,7 @@ a {
 .logo-image {
     height: 48px;
     width: auto;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 .main-logo-link {
@@ -49,7 +49,7 @@ a {
 }
 
 .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(52, 211, 153)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=UTF8, %3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(52, 211, 153)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .btn-nav:hover {
@@ -71,19 +71,17 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 1em 1.75em;
+    padding: 1em;
     font-size: 1em;
     font-weight: 600;
     line-height: 1.5em;
     border-radius: 0.25em;
     border: 1px solid #000;
-    background-color: #000; 
+    background-color: #000;
     color: #fff;
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.2s, box-shadow 0.2s;
-    padding-left: 1em;
-    padding-right: 1em;
     box-shadow: 4px 4px 0 #34d399;
 }
 
@@ -112,22 +110,31 @@ a {
     height: 70vh;
     background-image: url('/media/hero-beige.webp');
     background-size: cover;
-    background-position: center;
+    background-position: center;a
 }
 
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
+}
 
 
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+@media(min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
 }
 
 /* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
+@media(min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
