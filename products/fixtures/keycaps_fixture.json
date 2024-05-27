@@ -1,0 +1,152 @@
+[
+    {
+        "model": "products.product",
+        "pk": 21,
+        "fields": {
+            "category": 5,
+            "manufacturer": 5,
+            "sku": "EPM-URBAN",
+            "name": "Epomaker Urban",
+            "description": "The Epomaker Urban keycap set features a 133-key layout with Cherry profile, made from durable PBT material. These keycaps support RGB shine through and are perfect for ANSI layouts.",
+            "price": "24.99",
+            "rating": null,
+            "image_url": null,
+            "image": ""
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 22,
+        "fields": {
+            "category": 5,
+            "manufacturer": 5,
+            "sku": "EPM-ALICE-ADV",
+            "name": "Epomaker Alice Adventure",
+            "description": "The Epomaker Alice Adventure keycap set supports both ANSI and ISO layouts with a 156-key count. Featuring a Cherry profile, these keycaps are made from PBT material and do not support RGB shine through.",
+            "price": "39.99",
+            "rating": null,
+            "image_url": null,
+            "image": ""
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 23,
+        "fields": {
+            "category": 5,
+            "manufacturer": 5,
+            "sku": "EPM-PEACH",
+            "name": "Epomaker Peach",
+            "description": "The Epomaker Peach keycap set features a 133-key ANSI layout with OEM profile. Made from durable PBT material, these keycaps support RGB shine through.",
+            "price": "39.99",
+            "rating": null,
+            "image_url": null,
+            "image": ""
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 24,
+        "fields": {
+            "category": 5,
+            "manufacturer": 5,
+            "sku": "EPM-MOSSY",
+            "name": "Epomaker Mossy",
+            "description": "The Epomaker Mossy keycap set features a 133-key ANSI layout with Cherry profile. Made from durable PBT material, these keycaps do not support RGB shine through.",
+            "price": "24.99",
+            "rating": null,
+            "image_url": null,
+            "image": ""
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 25,
+        "fields": {
+            "category": 5,
+            "manufacturer": 6,
+            "sku": "KIIBOOM-ICE-CREAM",
+            "name": "KiiBOOM Ice Cream",
+            "description": "The KiiBOOM Ice Cream keycap set features a 132-key ANSI layout with MOA profile. Made from durable PBT material, these keycaps do not support RGB shine through.",
+            "price": "49.99",
+            "rating": null,
+            "image_url": null,
+            "image": ""
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 26,
+        "fields": {
+            "category": 5,
+            "manufacturer": 3,  
+            "sku": "AKKO-NEON",
+            "name": "Akko Neon Keycap Set",
+            "description": "The Akko Neon keycap set features a striking neon color scheme with a 157-key count, Cherry profile, and PBT material. It supports both ANSI and ISO layouts and includes additional novelties.",
+            "price": "69.99",
+            "rating": null,
+            "image_url": null,
+            "image": ""
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 27,
+        "fields": {
+            "category": 5,
+            "manufacturer": 3,
+            "sku": "AKKO-LONDON",
+            "name": "Akko London Keycap Set",
+            "description": "The Akko London keycap set features a stylish London theme with a 158-key count, Cherry profile, and PBT material. It supports both ANSI and ISO layouts and includes additional novelties.",
+            "price": "79.99",
+            "rating": null,
+            "image_url": null,
+            "image": ""
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 28,
+        "fields": {
+            "category": 5,
+            "manufacturer": 6,
+            "sku": "KIIBOOM-GRAFFITI",
+            "name": "KiiBOOM Graffiti Keycap Set",
+            "description": "The KiiBOOM Graffiti keycap set features a vibrant graffiti design with a 129-key count, Cherry profile, and PBT material. It supports ANSI layouts and includes additional novelties.",
+            "price": "54.99",
+            "rating": null,
+            "image_url": null,
+            "image": ""
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 29,
+        "fields": {
+            "category": 5,
+            "manufacturer": 5,
+            "sku": "EPM-IFLOAT",
+            "name": "Epomaker IFLOAT Keycap Set",
+            "description": "The Epomaker IFLOAT keycap set features a pastel color scheme with a 131-key count, Cherry profile, and PBT material. It supports ANSI layouts and includes additional novelties.",
+            "price": "49.99",
+            "rating": null,
+            "image_url": null,
+            "image": ""
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 30,
+        "fields": {
+            "category": 5,
+            "manufacturer": 5,
+            "sku": "EPM-SEA-SAILOR",
+            "name": "Epomaker Sea Sailor Keycap Set",
+            "description": "The Epomaker Sea Sailor keycap set features a nautical theme with a 137-key count, Cherry profile, and PBT material. It supports both ANSI and ISO layouts and includes additional novelties.",
+            "price": "59.99",
+            "rating": null,
+            "image_url": null,
+            "image": ""
+        }
+    }
+]

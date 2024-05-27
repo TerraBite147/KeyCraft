@@ -1,0 +1,77 @@
+[
+  {
+    "model": "products.product",
+    "pk": 31,
+    "fields": {
+      "category": 1,
+      "manufacturer": 3,
+      "sku": "AKKO-3098B",
+      "name": "Akko 3098B",
+      "description": "The Akko 3098B is a versatile 98-key mechanical keyboard that balances functionality and compactness. It features high-quality Akko switches, RGB backlighting, and PBT keycaps for a durable and enjoyable typing experience.",
+      "price": "129.99",
+      "rating": "4.50",
+      "image_url": null,
+      "image": ""
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 32,
+    "fields": {
+      "category": 1,
+      "manufacturer": 2,
+      "sku": "KEYCHRON-K6",
+      "name": "Keychron K6",
+      "description": "The Keychron K6 is a compact 65% mechanical keyboard that offers both wired and wireless connectivity. It features hot-swappable switches, RGB backlighting, and an ergonomic design for comfortable typing.",
+      "price": "74.99",
+      "rating": "4.70",
+      "image_url": null,
+      "image": ""
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 33,
+    "fields": {
+      "category": 1,
+      "manufacturer": 2,
+      "sku": "KEYCHRON-K8",
+      "name": "Keychron K8",
+      "description": "The Keychron K8 is a tenkeyless (TKL) mechanical keyboard that offers both wired and wireless connectivity. It features hot-swappable switches, RGB backlighting, and a durable aluminum frame.",
+      "price": "87.99",
+      "rating": "4.80",
+      "image_url": null,
+      "image": ""
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 34,
+    "fields": {
+      "category": 1,
+      "manufacturer": 4,
+      "sku": "CIDOO-ABM098",
+      "name": "CIDOO ABM098",
+      "description": "The CIDOO ABM098 is a full-sized mechanical keyboard with a premium build quality. It features customizable RGB backlighting, durable PBT keycaps, and a comfortable typing experience.",
+      "price": "119.99",
+      "rating": "4.60",
+      "image_url": null,
+      "image": ""
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 35,
+    "fields": {
+      "category": 1,
+      "manufacturer": 5,
+      "sku": "EPOMAKER-SKYLOONG",
+      "name": "Epomaker SK61",
+      "description": "The Epomaker SK61 is a 60% compact mechanical keyboard featuring hot-swappable switches, RGB backlighting, and durable PBT keycaps. It's designed for both portability and performance.",
+      "price": "69.99",
+      "rating": "4.40",
+      "image_url": null,
+      "image": ""
+    }
+  }
+]
