@@ -66,6 +66,11 @@ a {
     color: white;
 }
 
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
 /* Button styles */
 .custom-btn {
     display: inline-flex;
