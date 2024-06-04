@@ -12,7 +12,7 @@ def all_products(request):
     products = Product.objects.all()
     query = None
     categories = None
-    manufacturer = None
+    manufacturers = None
     sort = None
     direction = None
 
@@ -25,8 +25,8 @@ def all_products(request):
                 products = products.annotate(lower_name=Lower("name"))
             elif sortkey == "manufacturer":
                 sortkey = "manufacturer__name"
-            if sortkey == "category":
-                sortkey == "category__name"
+            elif sortkey == "category":
+                sortkey = "category__name"
             if "direction" in request.GET:
                 direction = request.GET["direction"]
                 if direction == "desc":
@@ -39,9 +39,14 @@ def all_products(request):
             categories = Category.objects.filter(name__in=categories)
 
         if "manufacturer" in request.GET:
-            manufacturer = request.GET["manufacturer"]
-            if manufacturer:
-                products = products.filter(manufacturer__name__iexact=manufacturer)
+            manufacturers = request.GET["manufacturer"].split(",")
+            if manufacturers:
+                manufacturer_q_objects = Q()
+                for manufacturer in manufacturers:
+                    manufacturer_q_objects |= Q(name__iexact=manufacturer)
+
+                manufacturers_qs = Manufacturer.objects.filter(manufacturer_q_objects)
+                products = products.filter(manufacturer__in=manufacturers_qs)
 
         if "q" in request.GET:
             query = request.GET["q"]
@@ -62,7 +67,9 @@ def all_products(request):
         "products": products,
         "search_term": query,
         "current_categories": categories,
-        "current_manufacturer": manufacturer,
+        "current_manufacturers": (
+            manufacturers_qs if "manufacturer" in request.GET else None
+        ),
         "current_sorting": current_sorting,
     }
 
