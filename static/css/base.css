@@ -19,6 +19,9 @@ body {
 a {
     text-decoration: none;
 }
+a:hover {
+    color: white;
+}
 
 /* from Bulma */
 .icon {
@@ -112,10 +115,10 @@ a.category-badge > span.badge:hover {
 }
 
 /* Button hover styles */
-.custom-btn:hover {
-    background-color: #161818;
-    box-shadow: 8px 8px 0 #34d399;
-}
+    .custom-btn:hover {
+        background-color: #161818;
+        box-shadow: 8px 8px 0 #34d399;
+    }
 
 .text-black {
     color: #000 !important;
