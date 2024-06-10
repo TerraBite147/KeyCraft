@@ -46,7 +46,8 @@ INSTALLED_APPS = [
     "home",
     "products",
     "bag",
-    "checkout"
+    "checkout",
+    "crispy_forms",
 ]
 
 MIDDLEWARE = [
@@ -60,6 +61,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "keycraft.urls"
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
@@ -75,14 +78,18 @@ TEMPLATES = [
                 "django.template.context_processors.request",  # required by allauth
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
-                'django.template.context_processors.media',
-                'bag.contexts.bag_contents',
+                "django.template.context_processors.media",
+                "bag.contexts.bag_contents",
+            ],
+            "builtins": [
+                "crispy_forms.templatetags.crispy_forms_tags",
+                "crispy_forms.templatetags.crispy_forms_field",
             ],
         },
     },
 ]
 
-MESSAGE_STORGARE = 'django.contib.messages.storage.session.SessionStorage'
+MESSAGE_STORGARE = "django.contib.messages.storage.session.SessionStorage"
 
 AUTHENTICATION_BACKENDS = (
     # Needed to login by username in Django admin, regardless of `allauth`
@@ -155,8 +162,8 @@ USE_TZ = True
 STATIC_URL = "/static/"
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
@@ -169,15 +176,15 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Email configuration
 if DEBUG:
-    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 else:
-    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-    EMAIL_HOST = 'smtp.gmail.com'
+    EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+    EMAIL_HOST = "smtp.gmail.com"
     EMAIL_PORT = 587
     EMAIL_USE_TLS = True
-    EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
-    EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
-    DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL')
+    EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")
+    EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
+    DEFAULT_FROM_EMAIL = os.getenv("DEFAULT_FROM_EMAIL")
 
     print(f"EMAIL_HOST_USER: {EMAIL_HOST_USER}")
     print(f"EMAIL_HOST_PASSWORD: {EMAIL_HOST_PASSWORD}")
