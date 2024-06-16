@@ -102,13 +102,13 @@ AUTHENTICATION_BACKENDS = (
 SITE_ID = 1
 
 
-ACCOUNT_AUTHENTICATION_METHOD = "username_email"
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_EMAIL_VERIFICATION = "mandatory"
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
-LOGIN_URL = "/accounts/login/"
-LOGIN_REDIRECT_URL = "/"
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = "keycraft.wsgi.application"
 
@@ -173,20 +173,8 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
 # Email configuration
-if DEBUG:
-    EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-else:
-    EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-    EMAIL_HOST = "smtp.gmail.com"
-    EMAIL_PORT = 587
-    EMAIL_USE_TLS = True
-    EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")
-    EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
-    DEFAULT_FROM_EMAIL = os.getenv("DEFAULT_FROM_EMAIL")
-
-    print(f"EMAIL_HOST_USER: {EMAIL_HOST_USER}")
-    print(f"EMAIL_HOST_PASSWORD: {EMAIL_HOST_PASSWORD}")
-    print(f"DEFAULT_FROM_EMAIL: {DEFAULT_FROM_EMAIL}")
+DEFAULT_FROM_EMAIL = 'keycraft@example.com'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 # Stripe
