@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block page_header %}
+    <div class="container my-5 pt-3">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2 class="logo-font">FAQ</h2>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h2>Edit FAQ</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <button type="submit" class="btn btn-primary">Update FAQ</button>
+        </form>
+    </div>
+{% endblock %}

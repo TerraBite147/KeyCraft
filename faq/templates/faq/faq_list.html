@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block page_header %}
+<div class="container my-5 pt-3">
+    <div class="row">
+        <div class="col-12 text-center mb-4">
+            <h2 class="logo-font">FAQ</h2>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container my-5 pt-3">
+    <h2>FAQs</h2>
+    {% if request.user.is_superuser %}
+    <a href="{% url 'add_faq' %}" class="btn btn-primary mb-3">Add FAQ</a>
+    {% endif %}
+    <ul class="list-group">
+        {% for faq in faqs %}
+        <li class="list-group-item">
+            <h5>{{ faq.question }}</h5>
+            <p>{{ faq.answer }}</p>
+            {% if request.user.is_superuser %}
+            <a href="{% url 'edit_faq' faq.id %}" class="btn btn-secondary">Edit</a>
+            <a href="{% url 'delete_faq' faq.id %}" class="btn btn-danger">Delete</a>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    <div class="my-5">
+        <a class="custom-btn" href="{% url 'contact' %}">Submit a Question</a>
+    </div>
+</div>
+{% endblock %}
