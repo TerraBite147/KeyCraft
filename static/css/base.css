@@ -1,11 +1,11 @@
 html {
     height: 100%;
-    background-color: hsl(37, 95%, 91%);
+    background-color: #181817;
 }
 
 body {
     height: calc(100vh - 164px);
-    background-color: #FEEED4;
+    background-color: #181817;
     color: #555;
     font-family: 'Roboto';
 }
@@ -142,6 +142,17 @@ a.category-badge > span.badge:hover {
     background-position: center;
 }
 
+.full-width-divider {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background-color: #343a40; /* Bootstrap dark */
+    color: #28a745; /* Bootstrap green */
+}
+
+.full-width-divider h2 {
+    margin: 0;
+    padding: 1rem 0;
+}
 .overlay {
     height: 100%;
     width: 100%;
@@ -247,6 +258,14 @@ a.category-badge > span.badge:hover {
     border-color: #dc3545;
     border-radius: 0;
 }
+
+.section-divider {
+    border: 0;
+    height: 1px;
+    background: #000; /* Black color */
+    margin: 2rem 0; /* Adjust as needed */
+}
+
 
 /* -------------------------------- Media Queries */
 

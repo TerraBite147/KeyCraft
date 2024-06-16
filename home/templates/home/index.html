@@ -10,16 +10,129 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container-fluid hero-section position-relative d-flex align-items-center">
+    <!-- Hero Section -->
+    <div class="container-fluid hero-section position-relative d-flex align-items-center bg-light py-5" style="background: url('{% static 'images/hero-beige.webp' %}') no-repeat center center/cover;">
         <div class="row w-100 mx-0">
             <div class="col-12 col-md-6 text-center text-md-left text-container">
                 <h1 class="display-4 logo-font text-black">Pro Level Keyboards for
                     <strong class="logo-color">All</strong>
                 </h1>
-                <div class="my-5">
-                    <a class="custom-btn" href="{% url 'products' %}">Find the perfect Keyboard</a>
+                <p class="lead my-4">Discover the best keyboards designed for
+                    <br>
+                        gamers, programmers, and typing enthusiasts.</p>
+                    <div class="my-5">
+                        <a class="custom-btn" href="{% url 'products' %}">Find the perfect Keyboard</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 text-center"></div>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="full-width-divider bg-dark">
+            <div class="text-center py-3">
+                <h2 class="mb-0 text-green">Why Choose Our Keyboards?</h2>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2 class="mb-4 text-white">Our Keyboards Features</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-shield-alt fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="card-title">High Durability</h5>
+                            <p class="card-text">Built to last with high-quality materials and construction.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-cogs fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Customizable</h5>
+                            <p class="card-text">Customize your keyboard with different switches and keycaps.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-mouse-pointer fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Ergonomic Design</h5>
+                            <p class="card-text">Designed for comfort and ease of use during long typing sessions.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-{% endblock %}
+
+        <!-- Types of Keyboards Section -->
+        <div class="container my-5">
+            <div class="row text-center text-white">
+                <div class="col-12">
+                    <h2 class="mb-4 text-white">Types of Keyboards</h2>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <img src="{% static 'images/keyboard1.jpg' %}" class="img-fluid mb-3" alt="Mechanical Keyboard">
+                        <h4>Mechanical Keyboards</h4>
+                        <p>High durability and a satisfying typing experience.</p>
+                    </div>
+                    <div class="col-12 col-md-4 mb-4">
+                        <img src="{% static 'images/keyboard2.jpg' %}" class="img-fluid mb-3" alt="Membrane Keyboard">
+                            <h4>Membrane Keyboards</h4>
+                            <p>Quiet and affordable option for everyday use.</p>
+                        </div>
+                        <div class="col-12 col-md-4 mb-4">
+                            <img src="{% static 'images/keyboard3.jpg' %}" class="img-fluid mb-3" alt="Wireless Keyboard">
+                                <h4>Wireless Keyboards</h4>
+                                <p>Convenient and clutter-free with Bluetooth connectivity.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Types of Switches Section -->
+                    <div class="container my-5">
+                        <div class="row text-center text-white">
+                            <div class="col-12">
+                                <h2 class="mb-4">Types of Switches</h2>
+                            </div>
+                            <div class="col-12 col-md-4 mb-4">
+                                <img src="{% static 'images/switch1.jpg' %}" class="img-fluid mb-3" alt="Linear Switches">
+                                    <h4>Linear Switches</h4>
+                                    <p>Smooth and consistent keystrokes without tactile feedback.</p>
+                                </div>
+                                <div class="col-12 col-md-4 mb-4">
+                                    <img src="{% static 'images/switch2.jpg' %}" class="img-fluid mb-3" alt="Tactile Switches">
+                                        <h4>Tactile Switches</h4>
+                                        <p>Notable bump feedback at the actuation point for precision typing.</p>
+                                    </div>
+                                    <div class="col-12 col-md-4 mb-4">
+                                        <img src="{% static 'images/switch3.jpg' %}" class="img-fluid mb-3" alt="Clicky Switches">
+                                            <h4>Clicky Switches</h4>
+                                            <p>Audible click sound with tactile feedback, ideal for typing enthusiasts.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Call to Action Section -->
+                                <div class="container my-5 text-center text-white">
+                                    <h2 class="mb-4">Explore Our Collection</h2>
+                                    <p>Find the perfect keyboard that fits your style and needs. Whether you are a gamer, a programmer, or someone who loves quality keyboards, we have something for everyone.</p>
+                                    <div class="my-5">
+                                        <a class="custom-btn" href="{% url 'products' %}">Shop Now</a>
+                                    </div>
+                                </div>
+                            {% endblock %}
