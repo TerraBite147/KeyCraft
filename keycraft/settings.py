@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     "bag",
     "checkout",
     "profiles",
+    "contact",
     "crispy_forms",
 ]
 
@@ -102,13 +103,13 @@ AUTHENTICATION_BACKENDS = (
 SITE_ID = 1
 
 
-ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_AUTHENTICATION_METHOD = "username_email"
 ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_EMAIL_VERIFICATION = "mandatory"
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
-LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = '/'
+LOGIN_URL = "/accounts/login/"
+LOGIN_REDIRECT_URL = "/"
 
 WSGI_APPLICATION = "keycraft.wsgi.application"
 
@@ -173,8 +174,8 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
 # Email configuration
-DEFAULT_FROM_EMAIL = 'keycraft@example.com'
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = "keycraft@example.com"
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 
 # Stripe
