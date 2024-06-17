@@ -31,7 +31,10 @@ SECRET_KEY = "django-insecure-!g(s!=^jiw5c-z1ma2t_iu5hj_i+gzvrjqgeab862x^k4enj06
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["8000-terrabite147-keycraft-alyoez9xbou.ws-eu114.gitpod.io"]
+ALLOWED_HOSTS = [
+    "8000-terrabite147-keycraft-alyoez9xbou.ws-eu114.gitpod.io",
+    ".herokuapp.com",
+]
 
 
 # Application definition
@@ -129,9 +132,7 @@ WSGI_APPLICATION = "keycraft.wsgi.application"
 #     }
 # }
 
-DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-}
+DATABASES = {"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))}
 
 
 # Password validation
