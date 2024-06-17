@@ -16,6 +16,11 @@ body {
     padding: 0;
 }
 
+body .footer {
+    z-index: 999 !important;
+}
+
+
 a {
     text-decoration: none;
 }
@@ -169,10 +174,10 @@ a.category-badge > span.badge:hover {
 }
 
 .full-width-divider {
+    position: relative;
+    left: 50%;
     width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    background-color: #343a40; /* Bootstrap dark */
-    color: #28a745; /* Bootstrap green */
+    transform: translateX(-50%);
 }
 
 .full-width-divider h2 {
@@ -187,6 +192,7 @@ a.category-badge > span.badge:hover {
     position: fixed;
     background: white;
     z-index: 0;
+    margin-bottom: 144px;
 }
 
 /* ------------------------------- bootstrap toasts */
