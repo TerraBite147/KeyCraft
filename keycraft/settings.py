@@ -33,7 +33,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "8000-terrabite147-keycraft-alyoez9xbou.ws-eu114.gitpod.io",
-    ".herokuapp.com",
+    "*herokuapp.com",
 ]
 
 
