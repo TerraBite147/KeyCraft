@@ -120,6 +120,32 @@ a.category-badge > span.badge:hover {
     box-shadow: 8px 8px 0 #34d399;
 }
 
+/* Inverted Button styles */
+.custom-btn-inverted {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5em;
+    border-radius: 0.25em;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    box-shadow: 4px 4px 0 #34d399;
+}
+
+/* Inverted Button hover styles */
+.custom-btn-inverted:hover {
+    background-color: #eaeaea;
+    color: black;
+    box-shadow: 8px 8px 0 #34d399;
+}
+
 .text-black {
     color: #000 !important;
 }
