@@ -11,9 +11,8 @@
 {% endblock %}
 
 {% block content %}
-<div class="overlay"></div>
 <div class="container my-5 pt-3">
-    <h2>FAQs</h2>
+    <h2 class="text-green">FAQs</h2>
     {% if request.user.is_superuser %}
     <a href="{% url 'add_faq' %}" class="btn btn-primary mb-3">Add FAQ</a>
     {% endif %}

@@ -16,10 +16,13 @@ body {
     padding: 0;
 }
 
-body .footer {
-    z-index: 999 !important;
+footer.footer {
+    position: relative; 
+    z-index: 1;
 }
-
+header {
+    margin-bottom: 64px;
+}
 
 a {
     text-decoration: none;
@@ -182,7 +185,6 @@ a.category-badge > span.badge:hover {
 
 .full-width-divider h2 {
     margin: 0;
-    padding: 1rem 0;
 }
 .overlay {
     height: 100%;
@@ -194,6 +196,8 @@ a.category-badge > span.badge:hover {
     z-index: 0;
     margin-bottom: 144px;
 }
+
+
 
 /* ------------------------------- bootstrap toasts */
 

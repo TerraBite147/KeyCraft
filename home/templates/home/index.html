@@ -129,4 +129,24 @@
                                         <a class="custom-btn-inverted" href="{% url 'products' %}">Shop Now</a>
                                     </div>
                                 </div>
+
+                                <!-- FAQ and Contact Us Section -->
+                                <div class="container my-5 pt-5" id="faq-contact-section">
+                                    <div class="row">
+                                        <div class="col-md-6 text-white">
+                                            <h2>FAQ</h2>
+                                            <p>Add your FAQ content and link here.</p>
+                                            <p>
+                                                <a href="{% url 'faq_list' %}" class="text-green">FAQ</a>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6 text-white">
+                                            <h2>Contact Us</h2>
+                                            <p>Add your contact information and link here.</p>
+                                            <p>
+                                                <a href="{% url 'contact' %}" class="text-green">Contact Us</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             {% endblock %}
