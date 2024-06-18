@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container text-center py-5 bg-white mt-5 mb-5 rounded">
+        <h1 class="display-4 logo-font text-black">Page Not Found</h1>
+        <p class="lead my-4">The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+        <a class="custom-btn" href="{% url 'home' %}">Return to Home</a>
+    </div>
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}

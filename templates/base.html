@@ -12,6 +12,7 @@
         {% block extra_meta %}{% endblock %}
 
         {% block corecss %}
+            <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
@@ -39,7 +40,7 @@
             <div id="topnav" class="row bg-dark pt-lg-2 d-none d-lg-flex">
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                     <a href="{% url 'home' %}" class="nav-link main-logo-link d-flex align-items-center">
-                        <img src="{{ MEDIA_URL }}logo.webp" alt="KeyCraft Logo" class="logo-image mr-2">
+                        <img src="{% static 'images/logo.webp' %}" alt="KeyCraft Logo" class="logo-image mr-2">
                         <h2 class="logo-font logo-color my-0">
                             <strong>KeyCraft</strong>
                         </h2>
