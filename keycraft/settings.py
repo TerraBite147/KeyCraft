@@ -30,7 +30,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
     "8000-terrabite147-keycraft-alyoez9xbou.ws-eu114.gitpod.io",
-    "*.herokuapp.com",
+    ".herokuapp.com",
     "127.0.0.1",
     "localhost",
 ]
