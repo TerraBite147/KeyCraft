@@ -292,6 +292,61 @@ Wireframes were created using Balsamiq. The wireframes were created for desktop 
 
 # Testing
 
+
+## SEO Testing
+
+- The Home page was tested using the Lighthouse tool in Chrome DevTools. Below are the results of the SEO testing, minor issues were found and will be addressed in future updates.
+[Home SEO](README_files/SEO-home.pdf)
+- The Product list page was tested using the Lighthouse tool in Chrome DevTools. Below are the results of the SEO testing, minor issues were found and will be addressed in future updates.
+
+
+
+## Manual Testing
+
+| Test | Description | method | Expected Result | Actual Result | Pass/Fail |
+|------|-------------|--------|-----------------|---------------|-----------|
+| 1 | User can register for an account | Click on the register link in the navigation bar and fill in the registration form | User receives a verification email and is redirected to the login page | User receives a verification email and is redirected to the login page | Pass
+| 2 | User can log in to their account | Click on the login link in the navigation bar and fill in the login form | User is logged in and redirected to the home page | User is logged in and redirected to the home page | Pass |
+| 3 | User can log out of their account | Click on the logout link in the navigation bar | User is logged out and redirected to the home page | User is logged out and redirected to the home page | Pass |
+| 4 | User can view all products | Click on the view all products button on the home page | User is redirected to the product list page and can see all the products | User is redirected to the product list page and can see all the products | Pass |
+| 5 | User can view product details | Click on a product card on the product list page | User is redirected to the product detail page and can see all the details of the product | User is redirected to the product detail page and can see all the details of the product | Pass |
+| 6 | User can add a product to their shopping bag | Click on the add to bag button on the product detail page | The product is added to the user's shopping bag and a message is displayed to the user | The product is added to the user's shopping bag and a message is displayed to the user | Pass |
+| 7 | User can view their shopping bag | Click on the shopping bag link in the navigation bar | User is redirected to the shopping bag page and can see all the products in their shopping bag | User is redirected to the shopping bag page and can see all the products in their shopping bag | Pass |
+| 8 | User can update the quantity of a product in their shopping bag | Change the quantity of a product in the shopping bag and click the update button | The quantity of the product is updated and the total cost is updated | The quantity of the product is updated and the total cost is updated | Pass |
+| 9 | User can remove a product from their shopping bag | Click on the remove button next to a product in the shopping bag | The product is removed from the shopping bag and the total cost is updated | The product is removed from the shopping bag and the total cost is updated | Pass |
+| 10 | User can proceed to checkout | Click on the proceed to checkout button on the shopping bag page | User is redirected to the order form page | User is redirected to the order form page | Pass |
+| 11 | User can place an order | Fill in the order form and click the place order button | User receives an order confirmation email and is redirected to the order confirmation page | User receives an order confirmation email and is redirected to the order confirmation page | Pass |
+| 12 | User can view their order history | Click on the profile link in the navigation bar | User is redirected to the profile page and can see their order history | User is redirected to the profile page and can see their order history | Pass |
+| 13 | User can update their delivery details | Click on the update delivery details button on the profile page | User can update their delivery details and save the changes | User can update their delivery details and save the changes | Pass |
+| 14 | User can search for a product | Enter a search term in the search bar and click the search button | User is redirected to the product list page and can see the search results | User is redirected to the product list page and can see the search results | Pass |
+| 15 | User can filter products by category | Select a category from the category dropdown and click the filter button | User is redirected to the product list page and can see the filtered products | User is redirected to the product list page and can see the filtered products | Pass |
+| 16 | User can sort products by price | Select a sort option from the sort dropdown and click the sort button | User is redirected to the product list page and can see the sorted products | User is redirected to the product list page and can see the sorted products | Pass |
+| 17 | User can sort products by name | Select a sort option from the sort dropdown and click the sort button | User is redirected to the product list page and can see the sorted products | User is redirected to the product list page and can see the sorted products | Pass |
+| 18 | User can sort products by rating | Select a sort option from the sort dropdown and click the sort button | User is redirected to the product list page and can see the sorted products | User is redirected to the product list page and can see the sorted products | Pass |
+| 19 | Admin user can add a product | Click on the add product link in the navigation bar and fill in the product form | Product is added to the site and is visible on the product list page | Product is added to the site and is visible on the product list page | Pass |
+| 20 | Admin user can edit a product | Click on the edit button next to a product on the product list page and fill in the product form | Product details are updated and are visible on the product list page | Product details are updated and are visible on the product list page | Pass |
+| 21 | Admin user can delete a product | Click on the delete button next to a product on the product list page | Product is deleted from the site and is no longer visible on the product list page | Product is deleted from the site and is no longer visible on the product list page | Pass |
+| 22 | User can send a message to the site admin | Click on the contact link in the footer and fill in the contact form | Site admin can see the message in the admin panel | Site admin can see the message in the admin panel | Pass |
+| 23 | User can view the FAQ page | Click on the FAQ link in the footer | User is redirected to the FAQ page and can see the FAQ's | User is redirected to the FAQ page and can see the FAQ's | Pass |
+| 24 | Admin user can add a FAQ | Click on the add FAQ link in the navigation bar and fill in the FAQ form | FAQ is added to the site and is visible on the FAQ page | FAQ is added to the site and is visible on the FAQ page | Pass |
+| 25 | Admin user can edit a FAQ | Click on the edit button next to a FAQ on the FAQ page and fill in the FAQ form | FAQ details are updated and are visible on the FAQ page | FAQ details are updated and are visible on the FAQ page | Pass |
+| 26 | Admin user can delete a FAQ | Click on the delete button next to a FAQ on the FAQ page | FAQ is deleted from the site and is no longer visible on the FAQ page | FAQ is deleted from the site and is no longer visible on the FAQ page | Pass |
+| 27 | User can view the 404 error page | Enter an invalid URL in the browser | User is redirected to the 404 error page | User is redirected to the 404 error page | Pass |
+| 29 | Mobile Responsiveness home page | Open the site on a mobile device | The site is responsive and the content is displayed correctly | The site is responsive and the content is displayed correctly | Pass |
+| 30 | Mobile Responsiveness product list page | Open the site on a mobile device | The site is responsive and the content is displayed correctly | The site is responsive and the content is displayed correctly | Pass |
+| 31 | Mobile Responsiveness product detail page | Open the site on a mobile device | The site is responsive and the content is displayed correctly | The site is responsive and the content is displayed correctly | Pass |
+| 32 | Mobile Responsiveness shopping bag page | Open the site on a mobile device | The site is responsive and the content is displayed correctly | The site is responsive and the content is displayed correctly | Pass |
+| 33 | Mobile Responsiveness order form page | Open the site on a mobile device | The site is responsive and the content is displayed correctly | The site is responsive and the content is displayed correctly | Pass |
+| 34 | Mobile Responsiveness order confirmation page | Open the site on a mobile device | The site is responsive and the content is displayed correctly | The site is responsive and the content is displayed correctly | Pass |
+| 35 | Mobile Responsiveness profile page | Open the site on a mobile device | The site is responsive and the content is displayed correctly | The site is responsive and the content is displayed correctly | Pass |
+| 36 | Mobile Responsiveness contact page | Open the site on a mobile device | The site is responsive and the content is displayed correctly | The site is responsive and the content is displayed correctly | Pass |
+| 37 | Mobile Responsiveness FAQ page | Open the site on a mobile device | The site is responsive and the content is displayed correctly | The site is responsive and the content is displayed correctly | Pass |
+| 38 | Mobile Responsiveness 404 error page | Open the site on a mobile device | The site is responsive and the content is displayed correctly | The site is responsive and the content is displayed correctly | Pass |
+
+
+
+
+
 Browse to the [TESTING.md](TESTING.md) file for the full testing documentation.
 
 ## Technologies Used

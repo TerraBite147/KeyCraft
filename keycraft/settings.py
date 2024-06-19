@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 import dj_database_url
+from cloudinary_storage.storage import MediaCloudinaryStorage
 
 if os.path.isfile("env.py"):
     import env
@@ -103,6 +104,10 @@ TEMPLATES = [
 ]
 
 MESSAGE_STORGARE = "django.contib.messages.storage.session.SessionStorage"
+
+CLOUDINARY_STORAGE = {
+    'SECURE': True  # This ensures HTTPS is used
+}
 
 AUTHENTICATION_BACKENDS = (
     # Needed to login by username in Django admin, regardless of `allauth`
