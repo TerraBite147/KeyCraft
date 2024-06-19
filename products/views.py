@@ -56,11 +56,8 @@ def all_products(request):
                 messages.error(request, "You didn't enter any search query")
                 return redirect(reverse("products"))
 
-            # Regex pattern for whole word matching
-            regex_pattern = r"\b" + query + r"\b"
-            queries = Q(name__iregex=regex_pattern) | Q(
-                description__iregex=regex_pattern
-            )
+            # Simplify the regex pattern for debugging
+            queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f"{sort}_{direction}"
