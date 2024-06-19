@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 import dj_database_url
-from cloudinary_storage.storage import MediaCloudinaryStorage
 
 if os.path.isfile("env.py"):
     import env
