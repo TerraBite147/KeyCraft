@@ -2,94 +2,58 @@
 
 ## Table of Contents
 
-- [Table of Contents](#table-of-contents)
-- [Overview](#overview)
-- [User Experience](#user-experience)
+- [KeyCraft](#keycraft)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [User Experience](#user-experience)
     - [Agile Methodology](#agile-methodology)
     - [User Epics](#user-epics)
-    - [User Stories](#user-stories)
-- [Design](#design)
-    - [Wireframes](#wireframes)
+  - [design](#design)
     - [Database Schema](#database-schema)
+    - [Wireframes](#wireframes)
     - [Typography](#typography)
-    - [Color Scheme](#color-scheme)
+    - [Colours](#colours)
+    - [Color Palette](#color-palette)
     - [Icons](#icons)
-- [Features](#features)
-    - [Existing Features](#existing-features)
-        - [General Navigation](#general-navigation)
-            - [Navigation Bar](#navigation-bar)
-            - [Landing Page](#landing-page)
-            - [Header](#header)
-            - [Footer](#footer)
-            - [Privacy Policy](#privacy-policy)
-            - [About Us](#about-us)
-            - [Error Pages](#error-pages)
-                - [404 Page](#404-page)
-                - [500 Page](#500-page)                    
-        - [Authentication](#authentication)
-            - [Registration](#registration)
-            - [Login](#login)
-            - [Logout](#logout)
-        - [Profile](#profile)
-            - [Profile Page](#profile-page)
-            - [Edit Profile](#edit-profile)
-        - [Products](#products)
-            - [Product Page](#product-page)
-            - [Search Products](#search-products)
-            - [Filter Products](#filter-products)
-            - [Product Details](#product-details)
-            - [Add Product](#add-product)
-            - [Edit Product](#edit-product)
-            - [Delete Product](#delete-product)
-        - [Cart](#cart)
-            - [Cart Page](#cart-page)
-            - [Add to Cart](#add-to-cart)
-            - [Remove from Cart](#remove-from-cart)
-            - [Adjust Quantity](#adjust-quantity)
-        - [Checkout](#checkout)
-            - [Checkout Page](#checkout-page)
-            - [Payment](#payment)
-            - [Order Form](#order-form)
-            - [Order Confirmation](#order-confirmation)
-        - [Contact](#contact)
-            - [Contact Page](#contact-page)
-            - [Contact Form](#contact-form)
-        - [Newsletter](#newsletter)
-            - [Newsletter Signup](#newsletter-signup)
-            - [Newsletter Unsubscribe](#newsletter-unsubscribe)
-
-
-- [Future Features](#future-features)
-- [Technologies Used](#technologies-used)
-    - [Languages](#languages)
-    - [Libraries and Frameworks](#libraries-and-frameworks)
-    - [Tools](#tools)
-    - [Databases](#databases)
-    - [Hosting](#hosting)
-    - [Version Control](#version-control)
+  - [Features](#features)
+    - [Nav Bar](#nav-bar)
+    - [Landing Page](#landing-page)
+    - [Product List Page](#product-list-page)
+    - [Product Detail View](#product-detail-view)
+    - [Search, Order \& Filter](#search-order--filter)
+    - [Bag](#bag)
+    - [Order From](#order-from)
+    - [Checkout Confirmation Page](#checkout-confirmation-page)
+    - [Profile Page](#profile-page)
+    - [Register, Log In \& Log Out](#register-log-in--log-out)
+    - [Footer](#footer)
+    - [Product Create](#product-create)
+    - [Product Edit](#product-edit)
+    - [Contact Page](#contact-page)
+    - [Error Pages](#error-pages)
+    - [Messages](#messages)
+  - [Features Left to Implement](#features-left-to-implement)
 - [Testing](#testing)
-    - [Manual Testing](#manual-testing)
-    - [Automated Testing](#automated-testing)
-    - [User Stories Testing](#user-stories-testing)
-    - [Bugs](#bugs)
-- [Web Marketing](#web-marketing)
-    - [Advantages](#advantages)
-    - [Target Audience](#target-audience)
-    - [Marketing Strategy](#marketing-strategy)
-- [SEO](#seo)
-    - [Meta Tags](#meta-tags)
-    - [Sitemap](#sitemap)
+  - [Technologies Used](#technologies-used)
+    - [Languages Used](#languages-used)
+    - [Libraries \& Frameworks](#libraries--frameworks)
+  - [Web Marketing](#web-marketing)
+    - [Key Advantages for KeyCraft:](#key-advantages-for-keycraft)
+    - [Target Audience:](#target-audience)
+    - [Marketing and Customer Engagement Strategies:](#marketing-and-customer-engagement-strategies)
+    - [Site Features and User Experience:](#site-features-and-user-experience)
+  - [Search Engine Optimization](#search-engine-optimization)
+    - [sitemap.xml](#sitemapxml)
     - [robots.txt](#robotstxt)
-- [Deployment](#deployment)
+  - [Deployment](#deployment)
     - [Heroku Deployment](#heroku-deployment)
-- [Credits](#credits)
+    - [Tools](#tools)
     - [Content](#content)
-    - [Media](#media)
-    - [Acknowledgements](#acknowledgements)
+    - [Information Resources](#information-resources)
 
 
 ## Overview
-KeyCraft is an e-commerce platform for enthusiasts to buy and customize keyboards, switches, and keycaps. The platform offers a seamless shopping experience with user-friendly navigation, detailed product information, and secure checkout. KeyCraft is built with Django, a high-level Python web framework, and uses PostgreSQL for the database. The platform is hosted on Heroku and uses Amazon S3 for static and media files storage.
+KeyCraft is an e-commerce platform for enthusiasts to buy and customize keyboards, switches, and keycaps. The platform offers a seamless shopping experience with user-friendly navigation, detailed product information, and secure checkout. KeyCraft is built with Django, a high-level Python web framework, and uses ElephantSQL for the database. The platform is hosted on Heroku and uses Cloudinary and Whitenoise for static and media files storage.
 
 ## User Experience
 ### Agile Methodology
@@ -98,4 +62,390 @@ KeyCraft was developed using the Agile methodology, which emphasizes iterative d
 ### User Epics
 KeyCraft is designed to meet the following user epics:
 
-1. User Registration and Authentication
+1. [User Registration and Authentication](https://github.com/TerraBite147/KeyCraft/milestone/1?closed=1)
+2. [Product Browsing and Search](https://github.com/TerraBite147/KeyCraft/milestone/2?closed=1)
+3. [Product Reviews](https://github.com/TerraBite147/KeyCraft/milestone/3)
+4. [Shopping Cart and Checkout](https://github.com/TerraBite147/KeyCraft/milestone/4?closed=1)
+5. [Order Management](https://github.com/TerraBite147/KeyCraft/milestone/5?closed=1)
+6. [Admin Management](https://github.com/TerraBite147/KeyCraft/milestone/6)
+7. [Customer Support](https://github.com/TerraBite147/KeyCraft/milestone/7?closed=1)
+8. [Marketing and Promotions](https://github.com/TerraBite147/KeyCraft/milestone/8)
+
+Each Epic dealing with a various key requirements broken down into user stroies
+
+
+## design
+
+### Database Schema
+- The database schema was created using dbdiagram.io. The schema was created to show the relationships between the different models in the database.
+  ![Schema](README_files/img/Schema.png)
+
+### Wireframes
+
+Wireframes were created using Balsamiq. The wireframes were created for desktop with the goal being to create a responsive design. The wireframes were created for the following pages:
+
+<details>
+<summary>Wireframes</summary>
+
+- Product List Page
+  - ![Wireframe for all products]()
+
+- Product Detail Page
+  - ![Wireframe for product details]()
+
+- Bag Page
+  - ![Wireframe for shopping bag]()
+
+- Checkout Page
+  - ![Wireframe for checkout form]()
+
+- Profile Page
+  - ![Wireframe for user profile page]()
+
+- Contact Page
+  - ![Wireframe for contact page]()
+
+- FAQ Page
+  - ![Wireframe for FAQ page]()
+
+</details>
+
+### Typography
+
+- Roboto
+
+  - The decision to use Lato for KeyCraft stems from its versatility and readability. Roboto offers a balance between serious and friendly tones, making it suitable for a wide range of applications. Its well-structured characters enhance readability, which is crucial for an e-commerce platform where clear communication is key.
+
+### Colours
+
+
+### Color Palette
+
+<table>
+  <tr>
+    <td style="background-color:#feeed4; width: 100px; height: 100px; border: 1px solid #000;"></td>
+    <td><b>Papaya whip</b><br>#feeed4<br>rgb(254, 238, 212)<br>Used as the background color for the main content area.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#34d399; width: 100px; height: 100px; border: 1px solid #000;"></td>
+    <td><b>Emerald</b><br>#34d399<br>rgb(52, 211, 153)<br>Used for the logo, accent text, and the 'Find the perfect Keyboard' button.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffffff; width: 100px; height: 100px; border: 1px solid #000;"></td>
+    <td><b>White</b><br>#ffffff<br>rgb(255, 255, 255)<br>Used for the text in the navigation bar and other text elements.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#343a40; width: 100px; height: 100px; border: 1px solid #000;"></td>
+    <td><b>Onyx</b><br>#343a40<br>rgb(52, 58, 64)<br>Used for the header and footer background.</td>
+  </tr>
+  <tr>
+    <td style="background-color:#181817; width: 100px; height: 100px; border: 1px solid #000;"></td>
+    <td><b>Eerie black</b><br>#181817<br>rgb(24, 24, 23)<br>Used as the background for certain sections and buttons.</td>
+  </tr>
+</table>
+
+
+### Icons
+
+- [Font Awesome](https://fontawesome.com/) - Used for all icons on the site.
+
+
+## Features
+
+### Nav Bar
+
+- The navigation bar is fixed to the top of the page and is visible on all pages. Its optimised for mobile and desktop view. The navigation bar contains links to all the pages on the site as well as a search bar and a link to the user's shopping bag. There is also a link to the user's profile if they are logged in. If the user is an admin user they will also see a link to the product management page. When opened on mobile the navigation bar collapses into a hamburger menu.
+![Navigation bar on desktop]()
+![Navigation bar on mobile]()
+
+### Landing Page
+
+- The landing page is the first page the user sees when they visit the site. It contains a hero image and a call to action button to view all products.
+![Landing page]()
+-The Landing page is used as an about page aswell further down will discribe the site and what you can find.
+![About Section]()
+### Product List Page
+
+- The product list page displays all the products available on the site. The user can filter the products by category and sort the products by price, name and rating. Users can also search for a product by name using the search bar. The avergae rating of the product is also displayed on the product card.
+![Product list page]()
+
+### Product Detail View
+
+- The product detail view displays all the details of a product. The user can select the quantity they want of the product to add to their shopping bag from this page.
+![Product detail view]()
+
+### Search, Order & Filter
+
+- The user can search for a product by name using the search bar. The user can also filter the products by category and sort the products by price, name and rating.
+![Order & Filter]()
+![Search bar]()
+
+### Bag
+
+- The bag page displays all the products the user has added to their shopping bag. It shows the product name, price,, quantity and subtotal. The user can update the quantity of a product using the input field. The user can also remove a product from their shopping bag. The user can also see the total cost of all the products in their shopping bag. The user can also see the delivery cost and the grand total of their order. They will also see a message notifing them of the free delivery threshold. The options to continue shopping or proceed to checkout are also available.
+![Bag page]()
+
+### Order From
+
+- The order form page allows the user to enter their delivery details and payment information. The user can also save their delivery details to their profile. On the right side of the page, the user can see the order summary. It lists all the products in the user's shopping bag, the delivery cost, the grand total.
+![Order form]()
+
+### Checkout Confirmation Page
+
+- The order confirmation page displays the user's order details and order number. The user will also receive an email confirmation of their order when the order is placed. There is also a link to go back to the user's profile page.
+![Order confirmation page]()
+
+### Profile Page
+
+- The profile page displays the user's delivery details and order history. The user can also update their delivery details on this page.
+![Profile page]()
+
+### Register, Log In & Log Out
+
+- The user can register for an account, log in and log out of their account.
+![Register page]()
+![Log in page]()
+![Log out page]()
+
+
+### Footer
+
+- The footer is visible on all pages and contains links to the site's social media pages and contact form as well as quick links to other pages.
+![Footer]()
+
+### Product Create
+
+- Admin users can create new products on the site.
+![Product create]()
+
+### Product Edit
+
+- Admin users can edit existing products details on the site.
+![Product edit]()
+
+### Contact Page
+
+- The contact page contains a contact form that allows the user to send a message to the site admin.
+![Contact page]()
+
+### Error Pages
+
+- The site contains custom error page for 404 errors.
+![404 error page]()
+
+### Messages
+
+- The site displays toast messages to the user to inform them of the status of their actions.
+
+- Login Success
+  - ![Toast messages]()
+- Item add
+  - ![Bag item Added]()
+- Bag Update
+  - ![Bag item Update]()
+- Bag item remove
+  - ![Bag item remove]()
+- Checkout Success
+  - ![Checkout form Confrmation]()
+- Profile Update
+  - ![Profile Update Confrmation]()
+  
+## Features Left to Implement
+
+- Stock management system to track stock levels and allow admin to add stock. The sale of an item would also update the stock level automatically.
+- A blog section to keep users up to date with the latest news and promotions.
+- Star rating picker for product reviews.
+- A Newsletter feature.
+
+# Testing
+
+Browse to the [TESTING.md](TESTING.md) file for the full testing documentation.
+
+## Technologies Used
+
+### Languages Used
+
+- HTML5
+
+- CSS3
+
+- JavaScript
+
+- Python
+
+### Libraries & Frameworks
+
+- Django:
+  - The Django web framework was used to create the full-stack web application.
+
+- Django Crispy Forms:
+  - A Django app that provides a way to control the rendering behavior of Django forms in a DRY manner. It is used to create elegant, div-based forms.
+
+- Django Allauth:
+  - Provides authentication, registration, and account management. It supports multiple authentication sources like social media platforms.
+
+- Django Storages:
+  - A collection of custom storage backends for Django. It allows Django projects to store files in locations other than the local filesystem, such as cloud storage services.
+
+- Stripe Library:
+  - This library is used to integrate payment services provided by Stripe into web applications, allowing for the processing of payments.
+
+- Django Countries:
+  - A Django app that provides country objects and a country field for models, enabling easy handling of country selection in forms.
+
+- Psycopg2-Binary:
+  - A PostgreSQL database adapter for Python, providing efficient and secure database connections.
+
+- PostgreSQL:
+  - PostgreSQL was used as the object-relational database system.
+
+- ElephantSQL:
+  - ElephantSQL offers PostgreSQL as a service, which can be used to host and manage the database in the cloud.
+
+- Git:
+  - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+
+- GitHub:
+  - GitHub is used to store the projects code after being pushed from Git.
+
+- Heroku:
+  - Heroku was used to deploy the application, providing a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
+
+- Gunicorn:
+  - A Python WSGI HTTP server for UNIX, used to run Python web applications.
+  
+- Cloudinary:
+  - Used to host images uploaded by the site owner.
+
+- Whitenoise: 
+    - Used to host static files.
+
+- dj-database-url:
+  - A Django utility that allows you to utilize the 12factor inspired DATABASE_URL environment variable to configure your Django application.
+ 
+
+## Web Marketing
+
+KeyCraft stands as a premier B2C e-commerce platform, dedicated to providing high-quality mechanical keyboards and accessories for gamers, programmers, and typing enthusiasts. Our extensive product range includes customizable keyboards, keycaps, switches, and other peripherals, ensuring we cater to all keyboard enthusiasts.
+
+### Key Advantages for KeyCraft:
+- **High-Quality Products**: We source and offer the best mechanical keyboards and accessories to meet the needs of our diverse customer base.
+- **Competitive Pricing**: By maintaining competitive prices, we ensure our customers receive the best value for their purchases.
+- **Fast Delivery**: Efficient logistics guarantee quick delivery times, minimizing wait periods and enhancing customer satisfaction.
+- **Customer Support**: Our dedicated support team is always available to assist with inquiries, provide product recommendations, and ensure a seamless shopping experience.
+- **Wide Product Selection**: From entry-level mechanical keyboards to high-end customizable options, our catalog meets the varied demands of keyboard enthusiasts.
+
+### Target Audience:
+KeyCraft primarily serves gamers, programmers, and typing enthusiasts looking for high-quality mechanical keyboards and accessories. We also cater to hobbyists and professionals seeking customizable options for their specific needs.
+
+### Marketing and Customer Engagement Strategies:
+- **Social Media and Online Marketing**: Leveraging platforms like Instagram, Facebook, and Twitter, we engage with our audience, showcase new products, and run targeted ad campaigns to boost visibility.
+- **Email Marketing**: Regular newsletters and promotional emails keep our customers informed about new arrivals, special offers, and exclusive deals.
+- **Content Marketing**: Through blog posts, tutorials, and product reviews, we provide valuable information and tips, enhancing customer knowledge and engagement.
+- **Influencer Collaborations**: Partnering with influencers in the tech and gaming communities to reach a broader audience and build brand trust.
+
+- **Facebook Business Page**: Utilizing Facebook's business tools to create a comprehensive business page, we aim to engage with our audience, share product updates, and offer customer support.
+  ![Facebook Business Page]()
+  Link to the Facebook Business Page [Here]()
+
+### Site Features and User Experience:
+KeyCraft is designed with user convenience in mind, featuring intuitive navigation, dedicated customer support, and a streamlined purchase process. Our goal is to ensure every visitor can effortlessly find and acquire the products they need to enhance their typing experience.
+
+## Search Engine Optimization
+
+**SEO and Content Strategy**: Utilizing tools like Google Analytics and Ahrefs, we identify and target key search terms relevant to our product offerings. Our content strategy emphasizes KeyCraft's expertise and commitment to quality, positioning us as leaders in the mechanical keyboard market.
+
+
+**Short Tail Keywords:**
+1. "Mechanical Keyboards"
+2. "Gaming Keyboards"
+3. "Custom Keycaps"
+4. "Keyboard Switches"
+5. "Mechanical Switches"
+6. "Typing Keyboards"
+7. "Keyboard Accessories"
+8. "RGB Keyboards"
+9. "Keyboard Kits"
+10. "Ergonomic Keyboards"
+
+**Long Tail Keywords:**
+1. "Best Mechanical Keyboards for Gamers"
+2. "Top Custom Keycaps for Mechanical Keyboards"
+3. "High-Quality Mechanical Switches for Keyboards"
+4. "Ergonomic Keyboards for Typing"
+5. "RGB Gaming Keyboards with Customizable Lighting"
+6. "Keyboard Kits for Building Custom Keyboards"
+7. "Mechanical Keyboards for Programmers"
+8. "Affordable Keyboard Accessories Online"
+9. "Mechanical Keyboard Reviews and Ratings"
+10. "Best Keyboard Switches for Typing and Gaming"
+
+
+### sitemap.xml
+
+Site map was generated using [XML Sitemaps](https://www.xml-sitemaps.com/) and then uploaded to the root directory of the site.
+
+### robots.txt
+
+The robots.txt file was created and uploaded to the root directory of the site.
+
+## Deployment
+
+### Heroku Deployment
+1. Create a Heroku account by going to https://signup.heroku.com/
+2. Create a new app by clicking the "New" button in the top right corner and then click "Create new app".
+3. Enter a name for the app and select the region closest to you.
+4. Click the "Create app" button.
+5. Select "settings" from the top menu.
+6. Click the "Reveal Config Vars" button.
+7. Enter the following environment variables with your values:
+  - STRIPE_PUBLIC_KEY
+  - STRIPE_SECRET_KEY
+  - STRIPE_WH_SECRET
+  - SECRET_KEY
+  - EMAIL_HOST_PASS
+  - EMAIL_HOST_USER
+  - CLOUDINARY_URL
+  - DATABASE_URL
+8. Click buildpacks from the top menu.
+9. Add the following buildpacks:
+  - heroku/python
+10. Click the "Deploy" tab from the top menu.
+11. Click the "Connect to GitHub" button.
+12. Enter https://github.com/TerraBite147/KeyCraft.git and click the "Connect" button.
+13. Click the "Enable Automatic Deploys" button.
+14. Click the "Deploy Branch" button.
+15. Click the "View" button to launch the app.
+
+
+### Tools
+
+- [Gitpod](https://www.gitpod.io/) - IDE application used to develop code in.
+- [Balsamiq](https://balsamiq.com/wireframes/) - Low Fidelity Wireframes
+- [W3C Validator](https://validator.w3.org/) - Validator that checks the markup validity for Web Documents in HTML.
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - Validator that checks CSS validity.
+- [Code Institute's Python Linter](https://pep8ci.herokuapp.com/) - Validator that checks syntax and stylistic problems in Python code.
+- [Am I responsive](https://ui.dev/amiresponsive) - Generates Responsive images for your website.
+- [Chrome DevTools and Lighthouse](https://developer.chrome.com/docs/devtools/) - Web Developer Tools.
+- [DB Diagram](https://dbdiagram.io/home) - Database Schema Design Tool.
+- [JSHint](https://jshint.com/) - JavaScript Validator.
+
+### Content
+- Keyboard , switches and key caps are all taken from the below manufacturers webistes.
+  - [Akko](https://en.akkogear.com)
+  - [CIDOO](https://www.cidoo.cn)
+  - [Cherry](https://www.cherry.de)
+  - [Epomaker](https://epomaker.com)
+  - [Gateron](https://gateron.com)
+  - [KBDFans](https://kbdfans.com)
+  - [Keychron](https://www.keychron.com)
+  - [KiiBOOM](https://www.kiiBOOM.com)
+- The favicon was generated using [ChatGPT](https://chatgpt.com/)
+- The Code Institue Boutique Ado walkthrough project was utilized as a frame and guide for the development of this site.
+
+
+### Information Resources
+
+- [W3Schools - Python](https://www.w3schools.com/python/)
+- [Stack Overflow](https://stackoverflow.com/)
+- [Youtube](https://youtube.com/)
