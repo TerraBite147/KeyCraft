@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /signup/
+Disallow: /inventory/
+Disallow: /accounts/
+Disallow: /profile/
+Disallow: /cart/
+Allow: /
+
+Sitemap: https://keycraft-51244bb1d3f4.herokuapp.com/sitemap.xml
