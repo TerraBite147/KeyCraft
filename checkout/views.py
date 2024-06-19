@@ -67,10 +67,10 @@ def checkout(request):
                 try:
                     product = Product.objects.get(id=item_id)
                     order_line_item = OrderLineItem(
-                            order=order,
-                            product=product,
-                            quantity=item_data,
-                        )
+                        order=order,
+                        product=product,
+                        quantity=item_data,
+                    )
                     order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(
@@ -187,6 +187,8 @@ def checkout_success(request, order_number):
     template = "checkout/checkout_success.html"
     context = {
         "order": order,
+        "from_profile": request.user.is_authenticated
+        and hasattr(request.user, "profile"),
     }
 
     return render(request, template, context)
