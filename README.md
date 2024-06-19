@@ -1,5 +1,31 @@
 # KeyCraft
 
+<center> 
+
+![Mock Image]()
+
+</center>
+
+Developer: [Logan Carlow](https://github.com/TerraBite147) <br>
+[Live webpage](https://keycraft-51244bb1d3f4.herokuapp.com/)<br>
+[Project Repository](https://github.com/TerraBite147/KeyCraft)<br>
+
+
+![GitHub Badge](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=fff&style=for-the-badge)
+![Gitpod Badge](https://img.shields.io/badge/Gitpod-FFAE33?logo=gitpod&logoColor=fff&style=for-the-badge)
+![Git Badge](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff&style=for-the-badge)
+![Heroku Badge](https://img.shields.io/badge/Heroku-430098?logo=heroku&logoColor=fff&style=for-the-badge)
+![PostgreSQL Badge](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=fff&style=for-the-badge)
+
+![HTML5 Badge](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff&style=for-the-badge)
+![CSS3 Badge](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff&style=for-the-badge)
+![JSS Badge](https://img.shields.io/badge/JSS-F7DF1E?logo=jss&logoColor=000&style=for-the-badge)
+![Python Badge](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=for-the-badge)
+![Markdown Badge](https://img.shields.io/badge/Markdown-000?logo=markdown&logoColor=fff&style=for-the-badge)
+
+![Bootstrap Badge](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff&style=for-the-badge)
+![Django Badge](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=fff&style=for-the-badge)
+
 ## Table of Contents
 
 - [KeyCraft](#keycraft)
@@ -121,28 +147,13 @@ Wireframes were created using Balsamiq. The wireframes were created for desktop 
 
 ### Color Palette
 
-<table>
-  <tr>
-    <td style="background-color:#feeed4; width: 100px; height: 100px; border: 1px solid #000;"></td>
-    <td><b>Papaya whip</b><br>#feeed4<br>rgb(254, 238, 212)<br>Used as the background color for the main content area.</td>
-  </tr>
-  <tr>
-    <td style="background-color:#34d399; width: 100px; height: 100px; border: 1px solid #000;"></td>
-    <td><b>Emerald</b><br>#34d399<br>rgb(52, 211, 153)<br>Used for the logo, accent text, and the 'Find the perfect Keyboard' button.</td>
-  </tr>
-  <tr>
-    <td style="background-color:#ffffff; width: 100px; height: 100px; border: 1px solid #000;"></td>
-    <td><b>White</b><br>#ffffff<br>rgb(255, 255, 255)<br>Used for the text in the navigation bar and other text elements.</td>
-  </tr>
-  <tr>
-    <td style="background-color:#343a40; width: 100px; height: 100px; border: 1px solid #000;"></td>
-    <td><b>Onyx</b><br>#343a40<br>rgb(52, 58, 64)<br>Used for the header and footer background.</td>
-  </tr>
-  <tr>
-    <td style="background-color:#181817; width: 100px; height: 100px; border: 1px solid #000;"></td>
-    <td><b>Eerie black</b><br>#181817<br>rgb(24, 24, 23)<br>Used as the background for certain sections and buttons.</td>
-  </tr>
-</table>
+| Swatch | Name | Hex | RGB | Description |
+|--------|------|-----|-----|-------------|
+| ![Papaya whip](https://placehold.it/150x40/feeed4/000000?text=feeed4) | **Papaya whip** | `#feeed4` | `rgb(254, 238, 212)` | Used as the background color for the main content area. |
+| ![Emerald](https://placehold.it/150x40/34d399/000000?text=34d399) | **Emerald** | `#34d399` | `rgb(52, 211, 153)` | Used for the logo, accent text, and the 'Find the perfect Keyboard' button. |
+| ![White](https://placehold.it/150x40/fff/000000?text=ffffff) | **White** | `#ffffff` | `rgb(255, 255, 255)` | Used for the text in the navigation bar and other text elements. |
+| ![Onyx](https://placehold.it/150x40/343a40/ffffff?text=343a40) | **Onyx** | `#343a40` | `rgb(52, 58, 64)` | Used for the header and footer background. |
+| ![Eerie black](https://placehold.it/150x40/181817/ffffff?text=181817) | **Eerie black** | `#181817` | `rgb(24, 24, 23)` | Used as the background for certain sections and buttons. |
 
 
 ### Icons
