@@ -312,6 +312,18 @@ a.category-badge > span.badge:hover {
     }
 }
 
+@media (max-width: 1433px) {
+    #hero-p {
+        display: none;
+    }
+} 
+
+@media(max-width: 766px) {
+    .hero-section{
+    background-image: none;
+    }
+    }
+
 /* fixed top navbar only on medium and up */
 @media(min-width: 992px) {
     .fixed-top-desktop-only {
@@ -323,7 +335,7 @@ a.category-badge > span.badge:hover {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 94px;
     }
 }
 
