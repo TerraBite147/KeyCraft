@@ -214,7 +214,7 @@ Wireframes were created using Balsamiq. The wireframes were created for desktop 
 ### Profile Page
 
 - The profile page displays the user's delivery details and order history. The user can also update their delivery details on this page.
-![Profile page]()
+![Profile page](/README_files/img/profile.png)
 
 ### Register, Log In & Log Out
 
@@ -252,7 +252,7 @@ Wireframes were created using Balsamiq. The wireframes were created for desktop 
 - ![FAQ](/README_files/img/faq.png)
 
 
--The admin will have options to add edit and delete FAQs
+- The admin will have options to add edit and delete FAQs
 ![Admin FAQ](/README_files/img/admin-faq.png)
 
 ### Error Pages
