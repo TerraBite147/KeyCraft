@@ -295,9 +295,17 @@ Wireframes were created using Balsamiq. The wireframes were created for desktop 
 
 ## SEO Testing
 
-- The Home page was tested using the Lighthouse tool in Chrome DevTools. Below are the results of the SEO testing, minor issues were found and will be addressed in future updates.
-[Home SEO](README_files/SEO-home.pdf)
-- The Product list page was tested using the Lighthouse tool in Chrome DevTools. Below are the results of the SEO testing, minor issues were found and will be addressed in future updates.
+- The site was tested using the Lighthouse tool in Chrome DevTools. With an average score of 90 for all pages.
+- The main issue was with cloudinary images not being served over https. This is a known issue and will be resolved in future updates.
+
+## Code Validation
+- Html was validated using the W3C validator. minor issues were found and will be resolved in future updates.
+![W3C](README_files/img/W3C.png)
+- CSS was validated using the W3C CSS validator. No issues were found.
+![CSS](/README_files/img/CSS.png)
+- Python was validated using the Code Institute Python Linter. minor issues with length of lines were found and will be resolved in future updates.
+
+- JSHint was used to validate the JavaScript. No issues were found.
 
 
 
@@ -344,7 +352,9 @@ Wireframes were created using Balsamiq. The wireframes were created for desktop 
 | 38 | Mobile Responsiveness 404 error page | Open the site on a mobile device | The site is responsive and the content is displayed correctly | The site is responsive and the content is displayed correctly | Pass |
 
 
+## known Bugs
 
+- Images hosted on Cloudinary are using http instead of https, this is causing a mixed content error in the console. This is a known issue with Cloudinary and is being worked on by the Cloudinary team. The images are still being displayed correctly on the site.
 
 
 Browse to the [TESTING.md](TESTING.md) file for the full testing documentation.
