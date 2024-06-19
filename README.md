@@ -2,7 +2,7 @@
 
 <center> 
 
-![Mock Image]()
+![Mock Image](/README_files/img/mock.png)
 
 </center>
 
@@ -34,7 +34,7 @@ Developer: [Logan Carlow](https://github.com/TerraBite147) <br>
   - [User Experience](#user-experience)
     - [Agile Methodology](#agile-methodology)
     - [User Epics](#user-epics)
-  - [design](#design)
+  - [Design](#design)
     - [Database Schema](#database-schema)
     - [Wireframes](#wireframes)
     - [Typography](#typography)
@@ -101,7 +101,7 @@ KeyCraft is designed to meet the following user epics:
 Each Epic dealing with a various key requirements broken down into user stroies
 
 
-## design
+## Design
 
 ### Database Schema
 - The database schema was created using dbdiagram.io. The schema was created to show the relationships between the different models in the database.
