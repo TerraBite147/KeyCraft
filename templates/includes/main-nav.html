@@ -1,23 +1,26 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold btn btn-nav text-green mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold btn btn-nav text-green mr-5" href="#" id="all-products-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}?sort=manufacturer&direction=asc" class="dropdown-item ">By Manufacturers</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
+                <a href="{% url 'products' %}?sort=manufacturer&direction=asc" class="dropdown-item">By
+                    Manufacturers</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold btn btn-nav text-green mr-5" href="#" id="Keyboards-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold btn btn-nav text-green mr-5" href="#" id="keyboards-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Keyboards
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="Keyboards-link">
+            <div class="dropdown-menu border-0" aria-labelledby="keyboards-link">
                 <a href="{% url 'products' %}?category=mechanical" class="dropdown-item">Mechanical</a>
                 <a href="{% url 'products' %}?category=ergonomic" class="dropdown-item">Ergonomic</a>
                 <a href="{% url 'products' %}?category=mechanical,ergonomic" class="dropdown-item">All Keyboards</a>
@@ -25,10 +28,11 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold btn btn-nav text-green mr-5" href="#" id="Components-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold btn btn-nav text-green mr-5" href="#" id="components-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Components
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="Components-link">
+            <div class="dropdown-menu border-0" aria-labelledby="components-link">
                 <a href="{% url 'products' %}?category=keycaps" class="dropdown-item">Keycaps</a>
                 <a href="{% url 'products' %}?category=switches" class="dropdown-item">Switches</a>
                 <a href="{% url 'products' %}?category=cases" class="dropdown-item">Cases</a>
@@ -37,10 +41,11 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold btn btn-nav text-green" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold btn btn-nav text-green" href="#" id="manufacturers-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Manufacturers
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+            <div class="dropdown-menu border-0" aria-labelledby="manufacturers-link">
                 <a href="{% url 'products' %}?manufacturer=akko" class="dropdown-item">Akko</a>
                 <a href="{% url 'products' %}?manufacturer=cidoo" class="dropdown-item">CIDOO</a>
                 <a href="{% url 'products' %}?manufacturer=cherry" class="dropdown-item">Cherry</a>
@@ -49,7 +54,8 @@
                 <a href="{% url 'products' %}?manufacturer=kbdfans" class="dropdown-item">KBDFans</a>
                 <a href="{% url 'products' %}?manufacturer=keychron" class="dropdown-item">Keychron</a>
                 <a href="{% url 'products' %}?manufacturer=kiiboom" class="dropdown-item">KiiBOOM</a>
-                <a href="{% url 'products' %}?manufacturer=akko,cidoo,cherry,epomaker,gateron,kbdfans,keychron,kiiboom" class="dropdown-item">All Manufacturers</a>
+                <a href="{% url 'products' %}?manufacturer=akko,cidoo,cherry,epomaker,gateron,kbdfans,keychron,kiiboom"
+                    class="dropdown-item">All Manufacturers</a>
             </div>
         </li>
     </ul>
