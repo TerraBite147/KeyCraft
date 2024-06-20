@@ -440,6 +440,7 @@ KeyCraft stands as a premier B2C e-commerce platform, dedicated to providing hig
 KeyCraft primarily serves gamers, programmers, and typing enthusiasts looking for high-quality mechanical keyboards and accessories. We also cater to hobbyists and professionals seeking customizable options for their specific needs.
 
 ### Marketing and Customer Engagement Strategies:
+- **Newsletter** : Utilizing newsletters as a way of keeping intersted customer informe
 - **Social Media and Online Marketing**: Leveraging platforms like Instagram, Facebook, and Twitter, we engage with our audience, showcase new products, and run targeted ad campaigns to boost visibility.
 - **Content Marketing**: Through blog posts, tutorials, and product reviews, we provide valuable information and tips, enhancing customer knowledge and engagement.
 - **Influencer Collaborations**: Partnering with influencers in the tech and gaming communities to reach a broader audience and build brand trust.
