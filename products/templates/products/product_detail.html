@@ -1,6 +1,13 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block meta %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{ product.description }}">
+{% endblock %}
+
 {% block page_header %}
     <div class="container-fluid bg-dark text-white py-3 mt-5">
         <div class="container">
@@ -16,99 +23,102 @@
             <div class="col-12 col-lg-6">
                 <div class="position-relative mb-4">
                     {% if product.image %}
-                        <a href="{{ product.image.url }}" target="_blank">
-                            <img class="img-fluid w-100 rounded shadow-sm" src="{{ product.image.url }}" alt="{{ product.name }}"></a>
-                        {% else %}
-                            <a href="#">
-                                <img class="img-fluid w-100 rounded shadow-sm" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"></a>
-                            {% endif %}
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-between">
+                        <a href="{{ product.image.url }}" target="_blank" aria-label="View larger image of {{ product.name }}">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="{{ product.image.url }}" alt="{{ product.name }}">
+                        </a>
+                    {% else %}
+                        <a href="#" aria-label="No image available for {{ product.name }}">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-between">
+                <div>
+                    <h2 class="text-dark font-weight-bold mb-4">{{ product.name }}</h2>
+
+                    {% if product.category or product.manufacturer %}
                         <div>
-                            <h2 class="text-dark font-weight-bold mb-4">{{ product.name }}</h2>
-
-                            {% if product.category or product.manufacturer %}
-                                <div>
-                                    {% if product.manufacturer %}
-                                        <p class="mb-0">
-                                            <a class="text-muted" href="{% url 'products' %}?manufacturer={{ product.manufacturer.name }}">
-                                                <i class="fa-solid fa-wrench mr-1"></i>
-                                                {{ product.manufacturer.name }}
-                                            </a>
-                                        </p>
-                                    {% endif %}
-                                </div>
-                            {% endif %}
-
-                            {% if product.rating %}
-                                <div>
-                                    <small class="text-muted">
-                                        <i class="fas fa-star mr-1"></i>
-                                        {{ product.rating }}
-                                        / 5
-                                    </small>
-                                </div>
-                            {% else %}
-                                <div class="mb-4">
-                                    <small class="text-muted">No Rating</small>
-                                </div>
-                            {% endif %}
-                            {% if product.category %}
+                            {% if product.manufacturer %}
                                 <p class="mb-0">
-                                    <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                                        <i class="fas fa-tag mr-1"></i>
-                                        {{ product.category.friendly_name }}
+                                    <a class="text-muted" href="{% url 'products' %}?manufacturer={{ product.manufacturer.name }}" aria-label="View more products from {{ product.manufacturer.name }}">
+                                        <i class="fa-solid fa-wrench mr-1"></i>
+                                        {{ product.manufacturer.name }}
                                     </a>
                                 </p>
                             {% endif %}
-                            <p class="text-dark mb-4">{{ product.description }}</p>
-                            {% if request.user.is_superuser %}
-                                <small>
-                                    <a href="{% url 'edit_product' product.id %}">Edit</a>
-                                    |
-                                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                                </small>
-                            {% endif %}
                         </div>
+                    {% endif %}
 
-                        <form action="{% url 'add_to_bag' product.id %}" method="POST" class="mt-4">
-                            {% csrf_token %}
-                            <div class="form-group">
-                                <h3 class="text-black font-weight-bold mb-4">€{{ product.price }}</h3>
-                                <label for="id_qty_{{ product.id }}" class="font-weight-bold">
-                                    <strong>Quantity:</strong>
-                                </label>
-                                <div class="input-group w-50">
-                                    <div class="input-group-prepend">
-                                        <button type="button" class="decrement-qty btn btn-outline-secondary" data-item_id="{{ product.id }}">
-                                            <i class="fas fa-minus"></i>
-                                        </button>
-                                    </div>
-                                    <input type="number" name="quantity" value="1" min="1" max="99" class="form-control text-center qty_input" data-item_id="{{ product.id }}">
-                                        <div class="input-group-append">
-                                            <button type="button" class="increment-qty btn btn-outline-secondary" data-item_id="{{ product.id }}">
-                                                <i class="fas fa-plus"></i>
-                                            </button>
-                                        </div>
-                                    </div>
+                    {% if product.rating %}
+                        <div>
+                            <small class="text-muted">
+                                <i class="fas fa-star mr-1"></i>
+                                {{ product.rating }}
+                                / 5
+                            </small>
+                        </div>
+                    {% else %}
+                        <div class="mb-4">
+                            <small class="text-muted">No Rating</small>
+                        </div>
+                    {% endif %}
+                    {% if product.category %}
+                        <p class="mb-0">
+                            <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}" aria-label="View more products in {{ product.category.friendly_name }}">
+                                <i class="fas fa-tag mr-1"></i>
+                                {{ product.category.friendly_name }}
+                            </a>
+                        </p>
+                    {% endif %}
+                    <p class="text-dark mb-4">{{ product.description }}</p>
+                    {% if request.user.is_superuser %}
+                        <small>
+                            <a href="{% url 'edit_product' product.id %}" aria-label="Edit {{ product.name }}">Edit</a>
+                            |
+                            <a class="text-danger" href="{% url 'delete_product' product.id %}" aria-label="Delete {{ product.name }}">Delete</a>
+                        </small>
+                    {% endif %}
+                </div>
 
-                                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
-
-                                        <div class="d-flex justify-content-between mt-4">
-                                            <a href="{% url 'products' %}" class="custom-btn text-uppercase">
-                                                <i class="fas fa-chevron-left"></i>
-                                                Keep Shopping
-                                            </a>
-                                            <button type="submit" class="custom-btn text-uppercase">Add to Bag</button>
-                                        </div>
-                                    </form>
-                                </div>
+                <form action="{% url 'add_to_bag' product.id %}" method="POST" class="mt-4">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <h3 class="text-black font-weight-bold mb-4">€{{ product.price }}</h3>
+                        <label for="id_qty_{{ product.id }}" class="font-weight-bold">
+                            <strong>Quantity:</strong>
+                        </label>
+                        <div class="input-group w-50">
+                            <div class="input-group-prepend">
+                                <button type="button" class="decrement-qty btn btn-outline-secondary" data-item_id="{{ product.id }}" aria-label="Decrease quantity">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                            </div>
+                            <input type="number" name="quantity" value="1" min="1" max="99" class="form-control text-center qty_input" data-item_id="{{ product.id }}" aria-label="Product quantity">
+                            <div class="input-group-append">
+                                <button type="button" class="increment-qty btn btn-outline-secondary" data-item_id="{{ product.id }}" aria-label="Increase quantity">
+                                    <i class="fas fa-plus"></i>
+                                </button>
                             </div>
                         </div>
-                    {% endblock %}
 
-                    {% block postloadjs %}
-                        {{ block.super }}
-                        {% include 'products/includes/quantity_script.html' %}
-                    {% endblock %}
+                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+
+                        <div class="d-flex justify-content-between mt-4">
+                            <a href="{% url 'products' %}" class="custom-btn text-uppercase" aria-label="Keep shopping">
+                                <i class="fas fa-chevron-left"></i>
+                                Keep Shopping
+                            </a>
+                            <button type="submit" class="custom-btn text-uppercase" aria-label="Add {{ product.name }} to bag">Add to Bag</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    {% include 'products/includes/quantity_script.html' %}
+{% endblock %}

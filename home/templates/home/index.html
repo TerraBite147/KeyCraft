@@ -1,152 +1,164 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block meta %}
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description"
+    content="Pro level keyboards for all. Discover the best keyboards designed for gamers, programmers, and typing enthusiasts.">
+{% endblock %}
+
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <!-- Hero Section -->
-    <div class="container-fluid hero-section position-relative d-flex align-items-center bg-light py-5" style="background: url('{% static 'images/hero-beige.webp' %}') no-repeat center center/cover;">
-        <div class="row w-100 mx-0">
-            <div class="col-12 col-md-6 text-center text-md-left text-container">
-                <h1 class="display-4 logo-font text-black">Pro Level Keyboards for
-                    <strong class="logo-color">All</strong>
-                </h1>
-                <p class="lead my-4" id="hero-p">Discover the best keyboards designed for
-                    <br>
-                        gamers, programmers, and typing enthusiasts.</p>
-                    <div class="my-5">
-                        <a class="custom-btn" href="{% url 'products' %}">Find the perfect Keyboard</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 text-center"></div>
+<!-- Hero Section -->
+<div class="container-fluid hero-section position-relative d-flex align-items-center bg-light py-5"
+    style="background: url('{% static 'images/hero-beige.webp' %}') no-repeat center center/cover;">
+    <div class="row w-100 mx-0">
+        <div class="col-12 col-md-6 text-center text-md-left text-container">
+            <h1 class="display-4 logo-font text-black">Pro Level Keyboards for
+                <strong class="logo-color">All</strong>
+            </h1>
+            <p class="lead my-4" id="hero-p">Discover the best keyboards designed for
+                <br>
+                gamers, programmers, and typing enthusiasts.
+            </p>
+            <div class="my-5">
+                <a class="custom-btn" href="{% url 'products' %}" aria-label="Find the perfect Keyboard">Find the
+                    perfect Keyboard</a>
             </div>
         </div>
+        <div class="col-12 col-md-6 text-center"></div>
+    </div>
+</div>
 
-        <!-- Divider -->
-        <div class="full-width-divider bg-dark">
-            <div class="text-center py-3">
-                <h2 class="mb-0 text-green">Why Choose Our Keyboards?</h2>
-            </div>
+<!-- Divider -->
+<div class="full-width-divider bg-dark">
+    <div class="text-center py-3">
+        <h2 class="mb-0 text-green">Why Choose Our Keyboards?</h2>
+    </div>
+</div>
+
+<!-- Features Section -->
+<div class="container my-5">
+    <div class="row text-center">
+        <div class="col-12">
+            <h2 class="mb-4 text-white">Our Keyboards Features</h2>
         </div>
-
-        <!-- Features Section -->
-        <div class="container my-5">
-            <div class="row text-center">
-                <div class="col-12">
-                    <h2 class="mb-4 text-white">Our Keyboards Features</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <i class="fas fa-shield-alt fa-3x text-primary"></i>
-                            </div>
-                            <h5 class="card-title">High Durability</h5>
-                            <p class="card-text">Built to last with high-quality materials and construction.</p>
-                        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <i class="fas fa-shield-alt fa-3x text-primary"></i>
                     </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <i class="fas fa-cogs fa-3x text-primary"></i>
-                            </div>
-                            <h5 class="card-title">Customizable</h5>
-                            <p class="card-text">Customize your keyboard with different switches and keycaps.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <i class="fas fa-mouse-pointer fa-3x text-primary"></i>
-                            </div>
-                            <h5 class="card-title">Ergonomic Design</h5>
-                            <p class="card-text">Designed for comfort and ease of use during long typing sessions.</p>
-                        </div>
-                    </div>
+                    <h5 class="card-title">High Durability</h5>
+                    <p class="card-text">Built to last with high-quality materials and construction.</p>
                 </div>
             </div>
         </div>
-
-        <!-- Types of Keyboards Section -->
-        <div class="container my-5">
-            <div class="row text-center text-white">
-                <div class="col-12">
-                    <h2 class="mb-4 text-white">Types of Keyboards</h2>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <i class="fas fa-cogs fa-3x text-primary"></i>
+                    </div>
+                    <h5 class="card-title">Customizable</h5>
+                    <p class="card-text">Customize your keyboard with different switches and keycaps.</p>
                 </div>
-                <div class="col-12 col-md-6 mb-4">
-                    <img src="{% static 'images/keyboard1.webp' %}" class="img-fluid mb-3" alt="Mechanical Keyboard">
-                        <h4>Mechanical Keyboards</h4>
-                        <p>High durability and a satisfying typing experience.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <i class="fas fa-mouse-pointer fa-3x text-primary"></i>
                     </div>
-                    <div class="col-12 col-md-6 mb-4">
-                        <img src="{% static 'images/keyboard2.webp' %}" class="img-fluid mb-3" alt="Membrane Keyboard">
-                            <h4>Ergonomic Keyboards</h4>
-                            <p>For the wrists and everyday use.</p>
-                        </div>
-                    </div>
+                    <h5 class="card-title">Ergonomic Design</h5>
+                    <p class="card-text">Designed for comfort and ease of use during long typing sessions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-                    <!-- Types of Switches Section -->
-                    <div class="container my-5">
-                        <div class="row text-center text-white">
-                            <div class="col-12">
-                                <h2 class="mb-4">Types of Switches</h2>
-                            </div>
-                            <div class="col-12 col-md-4 mb-4">
-                                <img src="{% static 'images/switch1.webp' %}" class="img-fluid mb-3" alt="Linear Switches">
-                                    <h4>Linear Switches</h4>
-                                    <p>Smooth and consistent keystrokes without tactile feedback.</p>
-                                </div>
-                                <div class="col-12 col-md-4 mb-4">
-                                    <img src="{% static 'images/switch2.webp' %}" class="img-fluid mb-3" alt="Tactile Switches">
-                                        <h4>Tactile Switches</h4>
-                                        <p>Notable bump feedback at the actuation point for precision typing.</p>
-                                    </div>
-                                    <div class="col-12 col-md-4 mb-4">
-                                        <img src="{% static 'images/switch3.webp' %}" class="img-fluid mb-3" alt="Clicky Switches">
-                                            <h4>Clicky Switches</h4>
-                                            <p>Audible click sound with tactile feedback, ideal for typing enthusiasts.</p>
-                                        </div>
-                                    </div>
-                                </div>
+<!-- Types of Keyboards Section -->
+<div class="container my-5">
+    <div class="row text-center text-white">
+        <div class="col-12">
+            <h2 class="mb-4 text-white">Types of Keyboards</h2>
+        </div>
+        <div class="col-12 col-md-6 mb-4">
+            <img src="{% static 'images/keyboard1.webp' %}" class="img-fluid mb-3" alt="Mechanical Keyboard">
+            <h4>Mechanical Keyboards</h4>
+            <p>High durability and a satisfying typing experience.</p>
+        </div>
+        <div class="col-12 col-md-6 mb-4">
+            <img src="{% static 'images/keyboard2.webp' %}" class="img-fluid mb-3" alt="Membrane Keyboard">
+            <h4>Ergonomic Keyboards</h4>
+            <p>For the wrists and everyday use.</p>
+        </div>
+    </div>
 
-                                <!-- Call to Action Section -->
-                                <div class="container my-5 text-center text-white">
-                                    <h2 class="mb-4">Explore Our Collection</h2>
-                                    <p>Find the perfect keyboard that fits your style and needs. Whether you are a gamer, a programmer, or someone who loves quality keyboards, we have something for everyone.</p>
-                                    <div class="my-5">
-                                        <a class="custom-btn-inverted" href="{% url 'products' %}">Shop Now</a>
-                                    </div>
-                                </div>
+    <!-- Types of Switches Section -->
+    <div class="container my-5">
+        <div class="row text-center text-white">
+            <div class="col-12">
+                <h2 class="mb-4">Types of Switches</h2>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <img src="{% static 'images/switch1.webp' %}" class="img-fluid mb-3" alt="Linear Switches">
+                <h4>Linear Switches</h4>
+                <p>Smooth and consistent keystrokes without tactile feedback.</p>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <img src="{% static 'images/switch2.webp' %}" class="img-fluid mb-3" alt="Tactile Switches">
+                <h4>Tactile Switches</h4>
+                <p>Notable bump feedback at the actuation point for precision typing.</p>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <img src="{% static 'images/switch3.webp' %}" class="img-fluid mb-3" alt="Clicky Switches">
+                <h4>Clicky Switches</h4>
+                <p>Audible click sound with tactile feedback, ideal for typing enthusiasts.</p>
+            </div>
+        </div>
+    </div>
 
-                                <!-- FAQ and Contact Us Section -->
-                                <div class="container my-5 pt-5" id="faq-contact-section">
-                                    <div class="row">
-                                        <div class="col-md-6 text-white">
-                                            <h2>FAQ</h2>
-                                            <p>Add your FAQ content and link here.</p>
-                                            <p>
-                                                <a href="{% url 'faq_list' %}" class="text-green">FAQ</a>
-                                            </p>
-                                        </div>
-                                        <div class="col-md-6 text-white">
-                                            <h2>Contact Us</h2>
-                                            <p>Add your contact information and link here.</p>
-                                            <p>
-                                                <a href="{% url 'contact' %}" class="text-green">Contact Us</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            {% endblock %}
+    <!-- Call to Action Section -->
+    <div class="container my-5 text-center text-white">
+        <h2 class="mb-4">Explore Our Collection</h2>
+        <p>Find the perfect keyboard that fits your style and needs. Whether you are a gamer, a programmer, or someone
+            who loves quality keyboards, we have something for everyone.</p>
+        <div class="my-5">
+            <a class="custom-btn-inverted" href="{% url 'products' %}" aria-label="Shop now">Shop Now</a>
+        </div>
+    </div>
+
+    <!-- FAQ and Contact Us Section -->
+    <div class="container my-5 pt-5" id="faq-contact-section">
+        <div class="row">
+            <div class="col-md-6 text-white">
+                <h2>FAQ</h2>
+                <p>Add your FAQ content and link here.</p>
+                <p>
+                    <a href="{% url 'faq_list' %}" class="text-green" aria-label="Frequently asked questions">FAQ</a>
+                </p>
+            </div>
+            <div class="col-md-6 text-white">
+                <h2>Contact Us</h2>
+                <p>Add your contact information and link here.</p>
+                <p>
+                    <a href="{% url 'contact' %}" class="text-green" aria-label="Contact us">Contact Us</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock %}

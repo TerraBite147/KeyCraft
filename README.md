@@ -61,6 +61,10 @@ Developer: [Logan Carlow](https://github.com/TerraBite147) <br>
     - [Messages](#messages)
   - [Features Left to Implement](#features-left-to-implement)
 - [Testing](#testing)
+  - [SEO Testing](#seo-testing)
+  - [Code Validation](#code-validation)
+  - [Manual Testing](#manual-testing)
+  - [known Bugs](#known-bugs)
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
     - [Libraries \& Frameworks](#libraries--frameworks)
@@ -438,13 +442,15 @@ KeyCraft primarily serves gamers, programmers, and typing enthusiasts looking fo
 
 ### Marketing and Customer Engagement Strategies:
 - **Social Media and Online Marketing**: Leveraging platforms like Instagram, Facebook, and Twitter, we engage with our audience, showcase new products, and run targeted ad campaigns to boost visibility.
-- **Email Marketing**: Regular newsletters and promotional emails keep our customers informed about new arrivals, special offers, and exclusive deals.
 - **Content Marketing**: Through blog posts, tutorials, and product reviews, we provide valuable information and tips, enhancing customer knowledge and engagement.
 - **Influencer Collaborations**: Partnering with influencers in the tech and gaming communities to reach a broader audience and build brand trust.
 
 - **Facebook Business Page**: Utilizing Facebook's business tools to create a comprehensive business page, we aim to engage with our audience, share product updates, and offer customer support.
-  ![Facebook Business Page]()
-  Link to the Facebook Business Page [Here]()
+  ![Facebook Business Page](./README_files/img/facebook.png)
+  ![Facebook Posts](./README_files/img/facebook-posts.png)
+  ![Facebook Posts](./README_files/img/fb-posts2.png)
+
+  Link to the Facebook Business Page [Here](https://www.facebook.com/people/KeyCraft/61560939701951/)
 
 ### Site Features and User Experience:
 KeyCraft is designed with user convenience in mind, featuring intuitive navigation, dedicated customer support, and a streamlined purchase process. Our goal is to ensure every visitor can effortlessly find and acquire the products they need to enhance their typing experience.
