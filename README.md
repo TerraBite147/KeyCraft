@@ -64,7 +64,7 @@ Developer: [Logan Carlow](https://github.com/TerraBite147) <br>
   - [SEO Testing](#seo-testing)
   - [Code Validation](#code-validation)
   - [Manual Testing](#manual-testing)
-  - [known Bugs](#known-bugs)
+  - [Known Bugs](#known-bugs)
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
     - [Libraries \& Frameworks](#libraries--frameworks)
@@ -102,7 +102,9 @@ KeyCraft is designed to meet the following user epics:
 7. [Customer Support](https://github.com/TerraBite147/KeyCraft/milestone/7?closed=1)
 8. [Marketing and Promotions](https://github.com/TerraBite147/KeyCraft/milestone/8)
 
-Each Epic dealing with a various key requirements broken down into user stroies
+Each Epic handles key requirements broken down into various user stroies.
+
+[User Stroies](https://github.com/TerraBite147/KeyCraft/issues?q=is%3Aissue+is%3Aclosed)
 
 
 ## Design
@@ -119,25 +121,20 @@ Wireframes were created using Balsamiq. The wireframes were created for desktop 
 <summary>Wireframes</summary>
 
 - Product List Page
-  - ![Wireframe for all products]()
+  - ![Wireframe for all products](./README_files/img/wf-all-products.png)
 
 - Product Detail Page
-  - ![Wireframe for product details]()
+  - ![Wireframe for product details](./README_files/img/wf-product-detail.png)
 
 - Bag Page
-  - ![Wireframe for shopping bag]()
+  - ![Wireframe for shopping bag](README_files/img/wf-bag.png)
 
 - Checkout Page
-  - ![Wireframe for checkout form]()
+  - ![Wireframe for checkout form](README_files/img/wf-checkout-form.png)
 
 - Profile Page
-  - ![Wireframe for user profile page]()
+  - ![Wireframe for user profile page](README_files/img/wf-profile.png)
 
-- Contact Page
-  - ![Wireframe for contact page]()
-
-- FAQ Page
-  - ![Wireframe for FAQ page]()
 
 </details>
 
@@ -197,8 +194,10 @@ Wireframes were created using Balsamiq. The wireframes were created for desktop 
 ### Search, Order & Filter
 
 - The user can search for a product by name using the search bar. The user can also filter the products by category and sort the products by price, name and rating.
-![Order & Filter](./README_files/img/filter.png)
-![Search bar](./README_files/img/search.png)
+ 
+  ![Order & Filter](./README_files/img/filter.png)
+
+  ![Search bar](./README_files/img/search.png)
 
 ### Bag
 
@@ -356,7 +355,7 @@ Wireframes were created using Balsamiq. The wireframes were created for desktop 
 | 38 | Mobile Responsiveness 404 error page | Open the site on a mobile device | The site is responsive and the content is displayed correctly | The site is responsive and the content is displayed correctly | Pass |
 
 
-## known Bugs
+## Known Bugs
 
 - Images hosted on Cloudinary are using http instead of https, this is causing a mixed content error in the console. This is a known issue with Cloudinary and is being worked on by the Cloudinary team. The images are still being displayed correctly on the site.
 
