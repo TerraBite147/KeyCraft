@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     "profiles",
     "contact",
     "faq",
+    "newsletter",
     "crispy_forms",
 ]
 
@@ -212,3 +213,7 @@ STRIPE_PUBLIC_KEY = os.getenv("STRIPE_PUBLIC_KEY", "")
 STRIPE_SECRET_KEY = os.getenv("STRIPE_SECRET_KEY", "")
 STRIPE_WH_SECRET = os.getenv("STRIPE_WH_SECRET", "")
 
+# Mailchip
+
+MAILCHIMP_API_KEY = '6acef0660a57e9d10f193fefd308bf7f-us13'
+MAILCHIMP_AUDIENCE_ID = 'fcd1a5d46a'

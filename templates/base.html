@@ -8,7 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="KeyCraft - Your one-stop shop for all crafting needs. Discover a wide range of products and enjoy free delivery on orders over €50.">
+    <meta name="description"
+        content="KeyCraft - Your one-stop shop for all crafting needs. Discover a wide range of products and enjoy free delivery on orders over €50.">
     {% endblock %}
 
     {% block extra_meta %}{% endblock %}
@@ -44,7 +45,8 @@
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-dark pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link d-flex align-items-center" aria-label="Navigate to home page">
+                <a href="{% url 'home' %}" class="nav-link main-logo-link d-flex align-items-center"
+                    aria-label="Navigate to home page">
                     <img src="{% static 'images/logo.webp' %}" alt="KeyCraft Logo" class="logo-image mr-2">
                     <h2 class="logo-font logo-color my-0">
                         <strong>KeyCraft</strong>
@@ -57,7 +59,8 @@
                         <input class="form-control border border-black rounded-left" type="text" name="q"
                             placeholder="Search">
                         <div class="input-group-append">
-                            <button class="form-control btn btn-green border border-black rounded-right" type="submit" aria-label="Submit search">
+                            <button class="form-control btn btn-green border border-black rounded-right" type="submit"
+                                aria-label="Submit search">
                                 <span class="icon">
                                     <i class="fas fa-search"></i>
                                 </span>
@@ -81,12 +84,14 @@
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                            <a href="{% url 'add_product' %}" class="dropdown-item" aria-label="Product management">Product Management</a>
+                            <a href="{% url 'add_product' %}" class="dropdown-item"
+                                aria-label="Product management">Product Management</a>
                             {% endif %}
                             <a href="{% url 'profile' %}" class="dropdown-item" aria-label="My profile">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item" aria-label="Logout">Logout</a>
                             {% else %}
-                            <a href="{% url 'account_signup' %}" class="dropdown-item" aria-label="Register">Register</a>
+                            <a href="{% url 'account_signup' %}" class="dropdown-item"
+                                aria-label="Register">Register</a>
                             <a href="{% url 'account_login' %}" class="dropdown-item" aria-label="Login">Login</a>
                             {% endif %}
                         </div>
@@ -173,17 +178,24 @@
                         <li>
                             <a href="{% url 'faq_list' %}" class="text-white" aria-label="FAQ">FAQ</a>
                         </li>
+                        <li>
+                            <a href="{% url 'newsletter_signup' %}" class="text-white"
+                                aria-label="Newsletter">Newsletter</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <h5>Follow Us</h5>
-                    <a href="https://www.facebook.com/people/KeyCraft/61560939701951/" target="_blank" class="text-white mr-3" aria-label="Follow us on Facebook">
+                    <a href="https://www.facebook.com/people/KeyCraft/61560939701951/" target="_blank"
+                        class="text-white mr-3" aria-label="Follow us on Facebook">
                         <i class="fab fa-facebook fa-lg"></i>
                     </a>
-                    <a href="https://github.com/TerraBite147/KeyCraft" target="_blank" class="text-white mr-3" aria-label="Follow us on GitHub">
+                    <a href="https://github.com/TerraBite147/KeyCraft" target="_blank" class="text-white mr-3"
+                        aria-label="Follow us on GitHub">
                         <i class="fab fa-github fa-lg"></i>
                     </a>
-                    <a href="https://instagram.com" target="_blank" class="text-white" aria-label="Follow us on Instagram">
+                    <a href="https://instagram.com" target="_blank" class="text-white"
+                        aria-label="Follow us on Instagram">
                         <i class="fab fa-instagram fa-lg"></i>
                     </a>
                 </div>

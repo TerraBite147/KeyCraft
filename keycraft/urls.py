@@ -15,5 +15,6 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('contact/', include('contact.urls')),
     path('faq/', include('faq.urls')),
+    path('newsletter/', include('newsletter.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 handler404 = 'keycraft.views.handler404'
